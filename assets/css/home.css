@@ -78,6 +78,7 @@ button{
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-decoration: none;
+    background-color: rgb(31, 216, 176);
 }
 a.button {
     text-align: center;
