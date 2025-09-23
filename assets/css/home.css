@@ -1,10 +1,92 @@
-:root { flex: auto;
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* CSS variables */
+
+:root {
+    /* Fonts */
+    --primary-font:"Corben";
+    --secondary-font:"Work-sans";
+
+    /* Colours */
+    --primary-color: #416a8e
 }
 
-/* Background image for use throughout the quiz */
+/* Removes all margings & padding so everything is customisable */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
-   
+  
+    font-family: var(--secondary-font);
+    color:black;
 }
-h1 {text-align: center};
 
-a:link {text-decoration: none;}
+h1, h2 {
+    font-family:var(--primary-font);
+    font-style: italic;
+    color: blueviolet;
+}
+
+.background-image {
+   background: url(/assets/images/background-image.jpg) no-repeat center center / cover;
+}
+.flex-container {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#informationBox {
+    text-align: center;
+    font-family: var(--secondary-font);
+    background-color: rgb(31, 216, 176);
+    opacity: 0.9;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+#informationBox > p {
+    padding: 1rem;
+}
+
+.options-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+button{
+    font-family: var(--secondary-font);
+    font-size: 100%;
+    padding: 0.75rem;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+a.button {
+    text-align: center;
+    color: black;
+    font-size: 100%;
+    font-family: var(--secondary-font);
+    padding: 0.75rem;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
