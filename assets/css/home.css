@@ -1,7 +1,10 @@
-:root {
-
-
-cursor: url('/assets/cursor/cursor\ \(1\).cur'), auto; 
+:root { flex: auto;
 }
 
+/* Background image for use throughout the quiz */
+body {
+   
+}
 h1 {text-align: center};
+
+a:link {text-decoration: none;}
