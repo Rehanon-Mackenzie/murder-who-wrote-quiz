@@ -2,11 +2,12 @@ const question = document.getElementById("question");
 const options = Array.from(document.getElementsByClassName("options"));
 const quiz = document.getElementById('quizArea');
 
-let currentQuizQuestion = {};
+
 let acceptingAnswers = true;
 let score = 0;
 let questionNumber = 0;
 let availableQuestions = [];
+
 
 let questions = [];
 
@@ -24,6 +25,7 @@ async function loadQuestions() {
   }
 }
 
+
 loadQuestions();
 
 
@@ -39,11 +41,16 @@ startQuiz = () => {
   getNextQuestion();
 }
 
+
 getNextQuestion = () => {
   questionNumber++;
  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-  currentQuizQuestion = availableQuestions[questionIndex];
+ let currentQuizQuestion =  availableQuestions[questionIndex];
   question.innerText = currentQuizQuestion.question;
+  let correctAnswer = currentQuizQuestion.answer_index;
+  console.log(correctAnswer);
+  let correctAnswerText = currentQuizQuestion.options[correctAnswer];
+  console.log(correctAnswerText);
 
 //  set options text
 options.forEach((options, i)=> {
@@ -58,6 +65,20 @@ options.forEach((options,i) => {
     console.log(chosenAnswer);
   });
 
-  
+  checkAnswer = () => {
+  if (chosenAnswer === correctAnswer) {
+    console.log('yay')
+  } else (
+    console.log('bad luck')
+  )
+
+}
+
+
 });
+
+
+checkAnswer();
+
+
 
