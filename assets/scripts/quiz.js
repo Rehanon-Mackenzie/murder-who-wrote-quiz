@@ -61,24 +61,23 @@ options.forEach((options, i)=> {
  
 options.forEach((options,i) => {
   options.addEventListener('click', (options) => {
-    const chosenAnswer = options.currentTarget.innerText;
-    console.log(chosenAnswer);
-  });
-
-  checkAnswer = () => {
+    const chosenAnswer = e.currentTarget.innerText;
+    checkAnswer = (chosenAnswer) => {
   if (chosenAnswer === correctAnswer) {
     console.log('yay')
   } else (
     console.log('bad luck')
-  )
-
-}
-
-
+  ) };
+  });
+  checkAnswer(chosenAnswer)
 });
 
 
-checkAnswer();
+
+
+ 
+
+
 
 
 
