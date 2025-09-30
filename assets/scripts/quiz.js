@@ -35,7 +35,13 @@ const max_questions = 20;
 startQuiz = () => {
   questionNumber = 0;
   score = 0;
-  availableQuestions = [...questions.splice(0, max_questions)];
+  availableQuestions = [...questions];
+  for (let i = availableQuestions.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i+1));
+    [availableQuestions[i], availableQuestions[j]] = [availableQuestions [j], availableQuestions[i]];
+  }
+  availableQuestions =availableQuestions.slice(0, max_questions);
+  console.log(availableQuestions);
   getNextQuestion();
 };
 
