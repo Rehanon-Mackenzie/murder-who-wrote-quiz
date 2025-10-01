@@ -45,34 +45,37 @@ startQuiz = () => {
   getNextQuestion();
 };
 
-checkAnswer = (chosenAnswer) => {
-  if (
-    chosenAnswer ===
-    currentQuestionItem.options[currentQuestionItem.answer_index]
-  ) {
-    console.log("yay");
-  } else {
-    console.log("bad luck");
-  }
-  getNextQuestion();
-};
+
 
 getNextQuestion = () => {
+  if (questionNumber >= max_questions || availableQuestions.length === 0) {
+    console.log ("Quiz Finished!  Final score:", score);
+  }
   questionNumber++;
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-  let currentQuizQuestion = availableQuestions[questionIndex];
-  question.innerText = currentQuizQuestion.question;
-  currentQuestionItem = currentQuizQuestion;
+  currentQuestionItem = availableQuestions.splice(questionIndex, 1)[0];
 
-  //  set options text
+  question.innerText = currentQuestionItem.question;
+   //  set options text
   options.forEach((options, i) => {
-    options.innerText = currentQuizQuestion.options[i] || "";
+    options.innerText = currentQuestionItem.options[i] || "";
+    options.dataset.index = i;
   });
 };
 
-options.forEach((options, i) => {
-  options.addEventListener("click", (options) => {
-    const chosenAnswer = options.currentTarget.innerText;
-    checkAnswer(chosenAnswer);
+ 
+
+options.forEach((option) => {
+  option.addEventListener("click", (event) => {
+    const chosenAnswerIndex = Number(event.currentTarget.dataset.index);
+    const correctAnswerIndex = currentQuestionItem.answer_index;
+  
+    if(chosenAnswerIndex === correctAnswerIndex) {
+      console.log('Wahoo!')
+    } else {
+      console.log('oh next time')
+    }
+  
+    getNextQuestion()
   });
 });
