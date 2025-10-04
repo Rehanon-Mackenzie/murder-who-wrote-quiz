@@ -1,6 +1,14 @@
 const question = document.getElementById("question");
 const options = Array.from(document.getElementsByClassName("options"));
+const rows = document.querySelectorAll('.quiz-container');
 const quiz = document.getElementById("quizArea");
+
+function debug(row, label = '', result = '') {
+  let color = 'cyan';
+  if (result === 'correct')   color = 'limegreen';
+  if (result === 'incorrect') color = 'crimson';
+  console.log(`%c${label} classes:`, `color:${color}; font-weight:bold;`, row.className);
+}
 
 let acceptingAnswers = true;
 let score = 0;
@@ -9,6 +17,8 @@ let availableQuestions = [];
 let currentQuestionItem;
 
 let questions = [];
+
+
 
 // loads the questions from JSON file
 async function loadQuestions() {
@@ -41,7 +51,6 @@ startQuiz = () => {
     [availableQuestions[i], availableQuestions[j]] = [availableQuestions [j], availableQuestions[i]];
   }
   availableQuestions =availableQuestions.slice(0, max_questions);
-  console.log(availableQuestions);
   getNextQuestion();
 };
 
@@ -50,6 +59,7 @@ startQuiz = () => {
 getNextQuestion = () => {
   if (questionNumber >= max_questions || availableQuestions.length === 0) {
     console.log ("Quiz Finished!  Final score:", score);
+    return;
   }
   questionNumber++;
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -65,17 +75,32 @@ getNextQuestion = () => {
 
  
 
-options.forEach((option) => {
-  option.addEventListener("click", (event) => {
-    const chosenAnswerIndex = Number(event.currentTarget.dataset.index);
-    const correctAnswerIndex = currentQuestionItem.answer_index;
-  
-    if(chosenAnswerIndex === correctAnswerIndex) {
-      console.log('Wahoo!')
-    } else {
-      console.log('oh next time')
-    }
-  
-    getNextQuestion()
+// ONE helper – top level, not duplicated
+
+
+rows.forEach((row) => {
+  row.addEventListener("click", () => {
+    if (!acceptingAnswers) return;
+    acceptingAnswers = false; // or false if you want to lock after first click
+
+    const chosen  = Number(row.querySelector('.options').dataset.index);
+    const correct = currentQuestionItem.answer_index;
+    const result  = (chosen === correct) ? 'correct' : 'incorrect';
+
+    console.groupCollapsed(`Click → ${result.toUpperCase()} (Q#${questionNumber})`);
+    debug(row, 'before', result);
+
+    rows.forEach(r => r.classList.remove('correct', 'incorrect'));
+    row.classList.add(result);
+    debug(row, 'after add', result);
+
+    setTimeout(() => {
+      row.classList.remove(result);
+      debug(row, 'after remove', result);
+      console.groupEnd();
+
+      getNextQuestion();
+     acceptingAnswers = true; // re-enable if you locked it
+    }, 1000);
   });
 });

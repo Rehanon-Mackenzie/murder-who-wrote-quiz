@@ -100,3 +100,15 @@ button, a.button {
     width: 80%;
     padding: 5px;
 }
+
+.quiz-container.correct, options.correct {
+ background-color: green;
+}
+
+.quiz-container.incorrect, options.incorrect {
+    background-color: red;
+}
+
+.quiz-container, .options {
+  transition: background-color 200ms ease;
+}
