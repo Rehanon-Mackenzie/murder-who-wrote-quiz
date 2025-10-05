@@ -192,25 +192,41 @@ options.incorrect {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   justify-content: flex-start;
+}
+
 .instructions-title {
   font-size: 1.05rem;
   font-weight: 700;
 }
 .close-instructions {
+  all: unset;
   position: absolute;
   top: 8px;
   right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
-  border: none;
-  background: none;
-  font-size: 1.4rem; /* slightly larger for balance */
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.25rem; /* slightly larger for balance */
   line-height: 1; /* keep tight vertical rhythm */
   color: #666; /* medium grey – softer look */
+  border-radius: 50%;
   transition: color 0.15s ease, transform 0.15s ease;
 }
 .close-instructions:hover {
   color: #000; /* darker on hover */
-  transform: scale(1.15); /* subtle feedback */
+  transform: scale(1.1); /* subtle feedback */
+  background-color: rgba(0, 0, 0, .08);
+  border-radius: 6px;
+}
+
+.close-instructions:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 2px;
 }
 
 .instructions-body {
