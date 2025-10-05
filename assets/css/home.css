@@ -112,3 +112,99 @@ button, a.button {
 .quiz-container, .options {
   transition: background-color 200ms ease;
 }
+
+#hud{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  margin-bottom:1rem;
+}
+
+.hud-item{ flex:1; }
+.hud-item.score{
+  flex:0 0 auto;
+  min-width:110px;
+  text-align:right;
+}
+
+.score-label{ margin-right:.4rem; font-weight:600; }
+
+.progress{
+  height:10px;
+  background:#eee;
+  border-radius:999px;
+  overflow:hidden;
+}
+#progressBar{
+  height:100%;
+  width:0;
+  background:#7ac657;            /* green fill */
+  transition:width .25s ease-in-out;
+}
+
+/* Modal */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.modal {
+   position: fixed; 
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   transition: 200ms ease-in-out;
+   border: 1px solid black;
+   border-radius: 10px;
+   z-index: 10;
+   background-color: white;
+   width: 500px;
+   max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+.instructions-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.instructions-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.close-instructions {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.instructions-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.5);
+    pointer-events: none;
+
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}

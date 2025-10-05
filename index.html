@@ -19,20 +19,33 @@
 <body class="flex-container">
     <div>
         <header>
-        <a href="index.html">
-            <h1>Murder Who Wrote?</h1>
-        </a>
+            <a href="index.html">
+                <h1>Murder Who Wrote?</h1>
+            </a>
         </header>
     </div>
-    <div id="informationBox" >
+    <div id="informationBox">
         <h2>Which one is it?</h2>
-                <div class="options-group">
-            <button>Instructions</button> 
+        <div class="options-group">
+            <button data-modal-target="#instructons-modal">Instructions</button>
+            <div class="modal" id="instructions-modal">
+                <div class="instructions-header">
+                    <div class="instructions-title">
+                        How to Play
+                    </div>
+                    <button data-close-button class="close-instructions">&times;</button>
+                </div>
+                <div class="instructions-body">
+                    Welcome to Murder Who Wrote? A quiz for armchair detectives. Answer 20 multiple choice questions and
+                    see how you stack up against our super sleuths.
+                </div>
+            </div>
             <div><a href="quiz.html" class="button">Play</a> </div>
-            <div><a href="highscores.html"class="button">High Scores</a></div>
+            <div><a href="highscores.html" class="button">High Scores</a></div>
         </div>
     </div>
-    <script src="assets/scripts/quiz.js"></script>
+    <div id="overlay"></div>
+    <script src="assets/scripts/index.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,11 @@ const question = document.getElementById("question");
 const options = Array.from(document.getElementsByClassName("options"));
 const rows = document.querySelectorAll('.quiz-container');
 const quiz = document.getElementById("quizArea");
+const progressText = document.getElementById('progressText');
+const progressBar  = document.getElementById('progressBar');
+const scoreEl      = document.getElementById('score');
+const HIGHSCORES_KEY = 'mwq_highscores';
+const LAST_SCORE_KEY = 'mwq_lastScore';
 
 function debug(row, label = '', result = '') {
   let color = 'cyan';
@@ -45,6 +50,10 @@ const max_questions = 20;
 startQuiz = () => {
   questionNumber = 0;
   score = 0;
+  scoreEl.textContent = '0';
+progressText.textContent = `Question 1 / ${max_questions}`;
+progressBar.style.width = '0%';
+progressBar.parentElement.setAttribute('aria-valuenow', '0');
   availableQuestions = [...questions];
   for (let i = availableQuestions.length - 1; i > 0; i--){
     const j = Math.floor(Math.random() * (i+1));
@@ -59,9 +68,11 @@ startQuiz = () => {
 getNextQuestion = () => {
   if (questionNumber >= max_questions || availableQuestions.length === 0) {
     console.log ("Quiz Finished!  Final score:", score);
+    finishQuiz();
     return;
   }
   questionNumber++;
+  updateHud();
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestionItem = availableQuestions.splice(questionIndex, 1)[0];
 
@@ -73,7 +84,18 @@ getNextQuestion = () => {
   });
 };
 
- 
+ function finishQuiz() {
+  const name  = localStorage.getItem('mwq_name') || 'Detective';
+  const entry = { name, score, date: new Date().toISOString() };
+
+  const highscores = JSON.parse(localStorage.getItem(HIGHSCORES_KEY) || '[]');
+  highscores.push(entry);
+  highscores.sort((a, b) => b.score - a.score);
+  localStorage.setItem(HIGHSCORES_KEY, JSON.stringify(highscores.slice(0, 10)));
+
+  localStorage.setItem(LAST_SCORE_KEY, String(score));
+  window.location.href = 'highscores.html';
+}
 
 // ONE helper – top level, not duplicated
 
@@ -86,6 +108,10 @@ rows.forEach((row) => {
     const chosen  = Number(row.querySelector('.options').dataset.index);
     const correct = currentQuestionItem.answer_index;
     const result  = (chosen === correct) ? 'correct' : 'incorrect';
+
+    if (result==='correct') {
+      score += correct_bonus;
+    }
 
     console.groupCollapsed(`Click → ${result.toUpperCase()} (Q#${questionNumber})`);
     debug(row, 'before', result);
@@ -104,3 +130,17 @@ rows.forEach((row) => {
     }, 1000);
   });
 });
+function updateHud() {
+  // Text: “Question X / N”
+  progressText.textContent = `Question ${questionNumber} / ${max_questions}`;
+
+  // Fill: show completed questions. If you’d rather include the current
+  // question in the fill, use `questionNumber` instead of `questionNumber - 1`.
+  const pct = Math.round(((questionNumber - 1) / max_questions) * 100);
+  progressBar.style.width = `${pct}%`;
+  progressBar.parentElement.setAttribute('aria-valuenow', String(pct));
+
+  // Score
+  scoreEl.textContent = String(score);
+}
+
