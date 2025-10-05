@@ -5,7 +5,7 @@ const overlay = document.getElementById('overlay');
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modal = document.querySelector(button.dataset.modalTarget);
-        openModal();
+        openModal(modal);
 
     })
 })
@@ -17,6 +17,11 @@ closeModalButtons.forEach(button => {
 
     })
 })
+
+// Optional: click on overlay closes any open modal
+overlay.addEventListener('click', () => {
+  document.querySelectorAll('.modal.active').forEach(modal => closeModal(modal));
+});
 
 
 function openModal(modal) {
