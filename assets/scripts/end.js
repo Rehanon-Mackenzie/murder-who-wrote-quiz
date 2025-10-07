@@ -16,13 +16,13 @@ playerName.addEventListener('keyup', () => {
 function savePlayerScore (event) {
 event.preventDefault();
 
-const score = {
-    score: Math.floor(Math.random() * 100),
-    playerName: playerName.value
+const entry = {
+    score: Number(mostRecentScore),
+    playerName: playerName.value.trim()
 };
-highScores.push(score);
+highScores.push(entry);
 highScores.sort((a, b) => b.score - a.score)
-highScores.splice(10);
+highScores.splice(MAX_HIGH_SCORES);
 
 localStorage.setItem('highScores', JSON.stringify(highScores));
 window.location.assign('index.html');

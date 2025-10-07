@@ -104,13 +104,11 @@ a.button {
   padding: 5px;
 }
 
-.quiz-container.correct,
-options.correct {
+.quiz-container.correct {
   background-color: green;
 }
 
-.quiz-container.incorrect,
-options.incorrect {
+.quiz-container.incorrect {
   background-color: red;
 }
 
@@ -287,4 +285,17 @@ input {
   margin: auto;
   padding: 0.8rem;
   border-radius: 1.5rem;
+}
+
+#highScoresList {
+  list-style-position: inside;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.high-score {
+  font-size: 0.8m;
+  margin-bottom: 0.4rem;
 }
