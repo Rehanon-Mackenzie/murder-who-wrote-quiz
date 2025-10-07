@@ -274,3 +274,17 @@ input {
   border-radius: 5px;
   text-decoration: none;
 }
+
+/* High Score Pages */
+
+#highScoresPanel {
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--secondary-font);
+  background-color: rgb(31, 216, 176);
+  opacity: 0.9;
+  width: 80%;
+  margin: auto;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+}
