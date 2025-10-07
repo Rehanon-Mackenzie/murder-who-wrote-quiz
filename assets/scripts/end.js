@@ -16,10 +16,11 @@ playerName.addEventListener('keyup', () => {
 function savePlayerScore (event) {
 event.preventDefault();
 
-const entry = {
-    score: Number(mostRecentScore),
-    playerName: playerName.value.trim()
-};
+  const raw = playerName.value;
+  const safeName = raw.replace(/[<>]/g, '').trim().slice(0, 20);
+  if (!safeName) return;
+
+  const entry = { score: Number(mostRecentScore), playerName: safeName };
 highScores.push(entry);
 highScores.sort((a, b) => b.score - a.score)
 highScores.splice(MAX_HIGH_SCORES);
