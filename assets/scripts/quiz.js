@@ -45,7 +45,7 @@ loadQuestions();
 // constants
 
 const correct_bonus = 10;
-const max_questions = 20;
+const max_questions = 3;
 
 startQuiz = () => {
   questionNumber = 0;
@@ -67,7 +67,7 @@ progressBar.parentElement.setAttribute('aria-valuenow', '0');
 
 getNextQuestion = () => {
   if (questionNumber >= max_questions || availableQuestions.length === 0) {
-    console.log ("Quiz Finished!  Final score:", score);
+  
     finishQuiz();
     return;
   }
@@ -85,16 +85,10 @@ getNextQuestion = () => {
 };
 
  function finishQuiz() {
-  const name  = localStorage.getItem('mwq_name') || 'Detective';
-  const entry = { name, score, date: new Date().toISOString() };
 
-  const highscores = JSON.parse(localStorage.getItem(HIGHSCORES_KEY) || '[]');
-  highscores.push(entry);
-  highscores.sort((a, b) => b.score - a.score);
-  localStorage.setItem(HIGHSCORES_KEY, JSON.stringify(highscores.slice(0, 10)));
-
-  localStorage.setItem(LAST_SCORE_KEY, String(score));
-  window.location.href = 'highscores.html';
+  localStorage.setItem('mostRecentScore', score);
+  
+  window.location.href = 'end.html';
 }
 
 // ONE helper – top level, not duplicated
