@@ -110,7 +110,7 @@
   {
     "id": 10,
     "category": "Miss Marple",
-    "question": "Which book features a murder discovered in a pile of library books?",
+    "question": "Which Miss Marple book features a murder discovered in a pile of library books?",
     "options": [
       "Nemesis",
       "The Body in the Library",
@@ -134,7 +134,7 @@
   {
     "id": 12,
     "category": "Miss Marple",
-    "question": "Which of these is set partly on a tropical island hotel?",
+    "question": "Which of these Miss Marple books is set partly on a tropical island hotel?",
     "options": [
       "A Caribbean Mystery",
       "Sleeping Murder",
@@ -146,7 +146,7 @@
   {
     "id": 13,
     "category": "Miss Marple",
-    "question": "Which book involves a girls’ school and staged illusions?",
+    "question": "Which Miss Marple book involves a girls’ school and staged illusions?",
     "options": [
       "They Do It with Mirrors",
       "4.50 from Paddington",
@@ -158,7 +158,7 @@
   {
     "id": 14,
     "category": "Miss Marple",
-    "question": "Which recurring character is the local doctor in St. Mary Mead?",
+    "question": "Which recurring character in Miss Marple is the local doctor in St. Mary Mead?",
     "options": [
       "Dr. Haydock",
       "Dr. Owen",
@@ -170,7 +170,7 @@
   {
     "id": 15,
     "category": "Miss Marple",
-    "question": "Which novel begins with a strange announcement in a local paper?",
+    "question": "Which Mis Marple novel begins with a strange announcement in a local paper?",
     "options": [
       "A Murder is Announced",
       "The Body in the Library",
@@ -182,7 +182,7 @@
   {
     "id": 16,
     "category": "Miss Marple",
-    "question": "Which story features a crime witnessed from a passing train?",
+    "question": "Which Miss Marple story features a crime witnessed from a passing train?",
     "options": [
       "The Moving Finger",
       "At Bertram’s Hotel",
@@ -194,7 +194,7 @@
   {
     "id": 17,
     "category": "Miss Marple",
-    "question": "“Bertram’s Hotel” is best described as:",
+    "question": "“Bertram’s Hotel” that Miss Marple visits is best described as:",
     "options": [
       "A nostalgic London hotel",
       "A coastal resort",
@@ -218,7 +218,7 @@
   {
     "id": 19,
     "category": "Miss Marple",
-    "question": "Which novel was published posthumously and features a house called Hillside?",
+    "question": "Which Miss Marple novel was published posthumously and features a house called Hillside?",
     "options": [
       "Nemesis",
       "The Mirror Crack’d from Side to Side",
@@ -314,7 +314,7 @@
   {
     "id": 27,
     "category": "Hercule Poirot",
-    "question": "Which case takes place aboard a famous train in winter?",
+    "question": "Which Poirot case takes place aboard a famous train in winter?",
     "options": [
       "Hickory Dickory Dock",
       "Murder on the Orient Express",
@@ -326,7 +326,7 @@
   {
     "id": 28,
     "category": "Hercule Poirot",
-    "question": "Which novel is set largely on a Nile steamer?",
+    "question": "Which Poirot novel is set largely on a Nile steamer?",
     "options": [
       "Peril at End House",
       "Death on the Nile",
@@ -362,7 +362,7 @@
   {
     "id": 31,
     "category": "Hercule Poirot",
-    "question": "Which story involves alphabetical killings and taunting letters?",
+    "question": "Which Poirot story involves alphabetical killings and taunting letters?",
     "options": [
       "Taken at the Flood",
       "Dumb Witness",
@@ -422,7 +422,7 @@
   {
     "id": 36,
     "category": "Hercule Poirot",
-    "question": "Which case features a murder in a country house and an unreliable narrator twist?",
+    "question": "Which Poirot case features a murder in a country house and an unreliable narrator twist?",
     "options": [
       "The Murder of Roger Ackroyd",
       "Sad Cypress",
@@ -530,7 +530,7 @@
   {
     "id": 45,
     "category": "Murder, She Wrote",
-    "question": "Which lawman served early on in Cabot Cove?",
+    "question": "Which lawman served early on in Cabot Cove in Murder, She Wrote?",
     "options": [
       "Sergeant Troy",
       "Inspector Japp",
@@ -566,7 +566,7 @@
   {
     "id": 48,
     "category": "Murder, She Wrote",
-    "question": "The series’ structure typically features Jessica:",
+    "question": "The Murder She Wrote series’ structure typically features Jessica:",
     "options": [
       "Performing forensic lab analyses",
       "Working as a police consultant full-time",
@@ -578,7 +578,7 @@
   {
     "id": 49,
     "category": "Murder, She Wrote",
-    "question": "Cabot Cove is located in which U.S. state?",
+    "question": "Home of Murder She Wrote, Cabot Cove is located in which U.S. state?",
     "options": [
       "Vermont",
       "Massachusetts",
@@ -590,7 +590,7 @@
   {
     "id": 50,
     "category": "Murder, She Wrote",
-    "question": "Which of these is most associated with Jessica Fletcher’s sleuthing style?",
+    "question": "Which of these in Murder, She Wrote is most associated with Jessica Fletcher’s sleuthing style?",
     "options": [
       "Friendly persistence",
       "High-speed chases",
@@ -602,7 +602,7 @@
   {
     "id": 51,
     "category": "Murder, She Wrote",
-    "question": "Which later Cabot Cove sheriff often works with Jessica?",
+    "question": "Which later Cabot Cove sheriff often works with Jessica in Muder, She Wrote?",
     "options": [
       "Andy Broom",
       "Mort Metzger",
@@ -614,7 +614,7 @@
   {
     "id": 52,
     "category": "Murder, She Wrote",
-    "question": "Jessica Fletcher’s books often mirror:",
+    "question": "In Murder, She Wrote, Jessica Fletcher’s books often mirror:",
     "options": [
       "Political campaigns",
       "Sports events",
@@ -626,7 +626,7 @@
   {
     "id": 53,
     "category": "Murder, She Wrote",
-    "question": "Jessica’s demeanor can best be described as:",
+    "question": "Jessica’s demeanor in Murder, She Wrote can best be described as:",
     "options": [
       "Aloof and cold",
       "Warm and perceptive",
@@ -638,7 +638,7 @@
   {
     "id": 54,
     "category": "Murder, She Wrote",
-    "question": "The show’s format is primarily:",
+    "question": "The format of Murder, She Wrote is primarily:",
     "options": [
       "Spy thriller",
       "Medical procedural",
@@ -650,7 +650,7 @@
   {
     "id": 55,
     "category": "Murder, She Wrote",
-    "question": "Jessica often clears the name of:",
+    "question": " In Murder, She Wrote, Jessica often clears the name of:",
     "options": [
       "Herself",
       "An innocent friend or acquaintance",
@@ -662,7 +662,7 @@
   {
     "id": 56,
     "category": "Murder, She Wrote",
-    "question": "Which medium frequently draws Jessica into cases?",
+    "question": "Which medium frequently draws Jessica into cases in Murder, She Wrote?",
     "options": [
       "Game shows",
       "Radio call-ins",
@@ -674,7 +674,7 @@
   {
     "id": 57,
     "category": "Murder, She Wrote",
-    "question": "The tone of the series is best described as:",
+    "question": "The tone of the Murder, She Wrote is best described as:",
     "options": [
       "Noir thriller",
       "Action crime",
@@ -686,7 +686,7 @@
   {
     "id": 58,
     "category": "Murder, She Wrote",
-    "question": "Jessica Fletcher’s typical investigative advantage is her:",
+    "question": "Jessica Fletcher’s typical investigative advantage in Murder, She Wrote is her:",
     "options": [
       "Insight into people’s motives",
       "Driving skills",
@@ -698,7 +698,7 @@
   {
     "id": 59,
     "category": "Murder, She Wrote",
-    "question": "Who composed the series’ famous main theme?",
+    "question": "Who composed Murder, She Wrote's famous main theme?",
     "options": [
       "John Addison",
       "Jerry Goldsmith",
@@ -710,7 +710,7 @@
   {
     "id": 60,
     "category": "Murder, She Wrote",
-    "question": "The show originally aired on which U.S. network?",
+    "question": "Murder, she wrote originally aired on which U.S. network?",
     "options": [
       "NBC",
       "ABC",
@@ -734,7 +734,7 @@
   {
     "id": 62,
     "category": "Midsomer Murders",
-    "question": "The original lead detective is DCI:",
+    "question": "The original lead detective in Midsomer Murders is DCI:",
     "options": [
       "John Barnaby",
       "Robbie Lewis",
@@ -746,7 +746,7 @@
   {
     "id": 63,
     "category": "Midsomer Murders",
-    "question": "The principal town and police HQ are based in:",
+    "question": "The principal town and police HQ in Midsomer Murders are based in:",
     "options": [
       "Oxford",
       "St. Mary Mead",
@@ -758,7 +758,7 @@
   {
     "id": 64,
     "category": "Midsomer Murders",
-    "question": "Which sergeant first partners with Tom Barnaby?",
+    "question": "Which sergeant first partners with Tom Barnaby in Midsomer Murders?",
     "options": [
       "Dan Scott",
       "Ben Jones",
@@ -770,7 +770,7 @@
   {
     "id": 65,
     "category": "Midsomer Murders",
-    "question": "Tom Barnaby is later succeeded by his cousin:",
+    "question": "Midsomer Murders' Tom Barnaby is later succeeded by his cousin:",
     "options": [
       "Neil Barnaby",
       "James Barnaby",
@@ -782,7 +782,7 @@
   {
     "id": 66,
     "category": "Midsomer Murders",
-    "question": "Which character serves as the long-running pathologist?",
+    "question": "Which character in Midsomer Murders serves as the long-running pathologist?",
     "options": [
       "Dr. George Bullard",
       "Dr. Haydock",
@@ -794,7 +794,7 @@
   {
     "id": 67,
     "category": "Midsomer Murders",
-    "question": "The series is based on novels by:",
+    "question": "The series Midsomer Murders is based on novels by:",
     "options": [
       "Ann Cleeves",
       "Caroline Graham",
@@ -818,7 +818,7 @@
   {
     "id": 69,
     "category": "Midsomer Murders",
-    "question": "Tom Barnaby’s wife is named:",
+    "question": "Tom Barnaby’s wife in Midsomer Murders is named:",
     "options": [
       "Fiona",
       "Joyce",
@@ -830,7 +830,7 @@
   {
     "id": 70,
     "category": "Midsomer Murders",
-    "question": "Which sergeant partners with John Barnaby early in his tenure?",
+    "question": "Which sergeant in Midsomer Murders partners with John Barnaby early in his tenure?",
     "options": [
       "Charlie Nelson",
       "Ben Jones",
@@ -866,7 +866,7 @@
   {
     "id": 73,
     "category": "Midsomer Murders",
-    "question": "John Barnaby’s wife is named:",
+    "question": "John Barnaby’s wife in Midsomer Murders is named:",
     "options": [
       "Joyce",
       "Laura",
@@ -878,7 +878,7 @@
   {
     "id": 74,
     "category": "Midsomer Murders",
-    "question": "Which recurring motif often features in murder methods?",
+    "question": "Which recurring motif often features in murder methods in Midsomer Murders?",
     "options": [
       "Cyber warfare",
       "Eccentric village traditions",
@@ -890,7 +890,7 @@
   {
     "id": 75,
     "category": "Midsomer Murders",
-    "question": "Tom Barnaby’s daughter is named:",
+    "question": "Tom Barnaby’s daughter in Midsomer Murders is named:",
     "options": [
       "Sally",
       "Molly",
@@ -902,7 +902,7 @@
   {
     "id": 76,
     "category": "Midsomer Murders",
-    "question": "Which sergeant follows Ben Jones?",
+    "question": "Which sergeant follows Ben Jones in Midsomer Murders?",
     "options": [
       "Dan Scott",
       "Gavin Troy",
@@ -914,7 +914,7 @@
   {
     "id": 77,
     "category": "Midsomer Murders",
-    "question": "Jamie Winter is a later partner to which Barnaby?",
+    "question": "In Midsomer Murders Jamie Winter is a later partner to which Barnaby?",
     "options": [
       "Tom Barnaby",
       "John Barnaby",
@@ -926,7 +926,7 @@
   {
     "id": 78,
     "category": "Midsomer Murders",
-    "question": "The show’s opening features a distinctive:",
+    "question": "Midsomer Murders' opening features a distinctive:",
     "options": [
       "Electric guitar riff",
       "Theremin-influenced theme",
@@ -938,7 +938,7 @@
   {
     "id": 79,
     "category": "Midsomer Murders",
-    "question": "The series is renowned for its unusually high number of:",
+    "question": "Midsomer Murders is renowned for its unusually high number of:",
     "options": [
       "Courtroom scenes",
       "Car chases",
@@ -950,7 +950,7 @@
   {
     "id": 80,
     "category": "Midsomer Murders",
-    "question": "Many episodes revolve around conflicts within:",
+    "question": "Many Midsomer Murders' episodes revolve around conflicts within:",
     "options": [
       "International gangs",
       "Space colonies",
@@ -1142,7 +1142,7 @@
   {
     "id": 96,
     "category": "Columbo",
-    "question": "The series often features antagonists from which social milieu?",
+    "question": "The Columbo series often features antagonists from which social milieu?",
     "options": [
       "Military squads",
       "Affluent professionals",
