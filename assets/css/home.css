@@ -102,10 +102,11 @@ a.button {
   text-align: center;
   width: 80%;
   padding: 5px;
+  cursor: pointer;
 }
 
 .quiz-container.correct {
-  background-color: green;
+  background-color: #7ac657;
 }
 
 .quiz-container.incorrect {

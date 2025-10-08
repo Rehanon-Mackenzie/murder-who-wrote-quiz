@@ -6,16 +6,6 @@ const progressText = document.getElementById("progressText");
 const progressBar = document.getElementById("progressBar");
 const scoreEl = document.getElementById("score");
 
-function debug(row, label = "", result = "") {
-  let color = "cyan";
-  if (result === "correct") color = "limegreen";
-  if (result === "incorrect") color = "crimson";
-  console.log(
-    `%c${label} classes:`,
-    `color:${color}; font-weight:bold;`,
-    row.className
-  );
-}
 
 let acceptingAnswers = true;
 let score = 0;
@@ -90,7 +80,7 @@ function finishQuiz() {
   window.location.href = "end.html";
 }
 
-// ONE helper – top level, not duplicated
+
 
 options.forEach((option) => {
   option.addEventListener("click", () => {

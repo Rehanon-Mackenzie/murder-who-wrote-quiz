@@ -6,7 +6,6 @@ yourScore.innerText = mostRecentScore
 
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const MAX_HIGH_SCORES = 10;
-console.log(highScores);
 
 
 playerName.addEventListener('keyup', () => {
