@@ -1,37 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="icon" sizes="16x16" href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-16.png">
-    <link rel="icon" sizes="32x32" href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-32.png">
-    <link rel="icon" sizes="96x96" href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-96.png">
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-16.png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-32.png"
+    />
+    <link
+      rel="icon"
+      sizes="96x96"
+      href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-96.png"
+    />
     <!-- Stylesheet -->
 
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/home.css" />
     <!-- Page Title -->
     <title>Murder Who Wrote?</title>
+  </head>
 
-</head>
+  <body class="flex-container">
+    <header>
+      <a href="index.html">
+        <h1>Murder Who Wrote?</h1>
+      </a>
+    </header>
+    <div id="highScoresPanel">
+      <h2 id="playerFinalScore">High Scores</h2>
+      <ol id="highScoresList"></ol>
+      <a href="quiz.html" class="button">Play Again</a>
+      <a href="index.html" class="button">Home</a>
+    </div>
 
-<body class="flex-container">
-
-        <header>
-        <a href="index.html">
-            <h1>Murder Who Wrote?</h1>
-        </a>
-        </header>
-        <div id="highScoresPanel"><h2 id="playerFinalScore">High Scores</h2>
-<ol id="highScoresList"></ol>
-<a href="quiz.html" class="button">Play Again</a>
-<a href="index.html" class="button">Home</a></div>
- 
-
-
-
-<script defer src="assets/scripts/highscores.js"></script>
-</body>
-
+    <script defer src="assets/scripts/highscores.js"></script>
+  </body>
 </html>

@@ -6,7 +6,6 @@ const progressText = document.getElementById("progressText");
 const progressBar = document.getElementById("progressBar");
 const scoreEl = document.getElementById("score");
 
-
 let acceptingAnswers = true;
 let score = 0;
 let questionNumber = 0;
@@ -80,8 +79,6 @@ function finishQuiz() {
   window.location.href = "end.html";
 }
 
-
-
 options.forEach((option) => {
   option.addEventListener("click", () => {
     if (!acceptingAnswers) return;
@@ -89,26 +86,30 @@ options.forEach((option) => {
 
     const chosen = Number(option.dataset.index);
     const correct = currentQuestionItem.answer_index;
-    const result = (chosen === correct) ? "correct" : "incorrect";
+    const result = chosen === correct ? "correct" : "incorrect";
 
-    rows.forEach(r => r.classList.remove('correct', 'incorrect'));
+    rows.forEach((r) => r.classList.remove("correct", "incorrect"));
 
     const selectedRow = option.closest(".quiz-container") || option;
     selectedRow.classList.add(result);
-  
+
     if (result === "correct") {
       score += correct_bonus;
       scoreEl.textContent = String(score);
     } else {
-      const correctOption = options.find(o => Number(o.dataset.index) === correct);
-      const correctRow = correctOption ? correctOption.closest(".quiz-container") : null;
-      if (correctRow) {correctRow.classList.add("correct");
+      const correctOption = options.find(
+        (o) => Number(o.dataset.index) === correct,
+      );
+      const correctRow = correctOption
+        ? correctOption.closest(".quiz-container")
+        : null;
+      if (correctRow) {
+        correctRow.classList.add("correct");
+      }
     }
-   
-    } 
-    
-       setTimeout(() => {
-     rows.forEach((r) => r.classList.remove("correct", "incorrect"));
+
+    setTimeout(() => {
+      rows.forEach((r) => r.classList.remove("correct", "incorrect"));
 
       getNextQuestion();
       acceptingAnswers = true; // re-enable if you locked it

@@ -1,51 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="icon" sizes="16x16" href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-16.png">
-    <link rel="icon" sizes="32x32" href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-32.png">
-    <link rel="icon" sizes="96x96" href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-96.png">
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-16.png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-32.png"
+    />
+    <link
+      rel="icon"
+      sizes="96x96"
+      href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-96.png"
+    />
     <!-- Stylesheet -->
 
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/home.css" />
     <!-- Page Title -->
+    0">
     <title>Murder Who Wrote?</title>
+  </head>
 
-</head>
+  <body class="flex-container">
+    <header>
+      <a href="index.html"><h1>Murder Who Wrote?</h1></a>
+    </header>
 
-<body class="flex-container">
-    <div>
-        <header>
-            <a href="index.html">
-                <h1>Murder Who Wrote?</h1>
-            </a>
-        </header>
-    </div>
     <div id="informationBox">
-        <h2>Welcome Detective</h2>
-        <div class="options-group">
-            <button data-modal-target="#instructions-modal">Instructions</button>
-            <div class="modal" id="instructions-modal">
-                <button data-close-button class="close-instructions">&times;</button>
-                <div class="instructions-header">
-                    <div class="instructions-title">
-                        How to Play
-                    </div>
-                </div>
-                <div class="instructions-body">
-                    Welcome to Murder Who Wrote? A quiz for armchair detectives. Answer 20 multiple choice questions and
-                    see how you stack up against our super sleuths.
-                </div>
-            </div>
-            <div><a href="quiz.html" class="button">Play</a> </div>
-            <div><a href="highscores.html" class="button">High Scores</a></div>
-        </div>
-    </div>
-    <div id="overlay"></div>
-    <script src="assets/scripts/index.js"></script>
-</body>
+      <h2>Welcome Detective</h2>
+      <div class="instructions-body">
+        Welcome to Murder Who Wrote? A quiz for armchair detectives. Answer 20
+        multiple choice questions and see how you stack up against our super
+        sleuths.
+      </div>
 
+      <!-- Button is OUTSIDE the overlay -->
+      <div class="options-group">
+        <button data-modal-target="#instructions-modal">Instructions</button>
+      </div>
+
+      <div><a href="quiz.html" class="button">Play</a></div>
+      <div><a href="highscores.html" class="button">High Scores</a></div>
+    </div>
+
+    <!-- MODAL lives near end of body -->
+    <div class="modal" id="instructions-modal">
+      <div class="instructions-header">
+        <div class="instructions-title">How to Play</div>
+        <button data-close-button class="close-instructions">&times;</button>
+      </div>
+      <div class="instructions-body">
+        Welcome to Murder Who Wrote? A quiz for armchair detectives. Answer 20
+        multiple choice questions and see how you stack up against our super
+        sleuths.
+      </div>
+    </div>
+
+    <!-- OVERLAY is an empty backdrop sibling, not a wrapper -->
+    <div id="overlay"></div>
+
+    <script src="assets/scripts/index.js"></script>
+  </body>
 </html>

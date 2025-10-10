@@ -1,32 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Well Done!</title>
-    <link rel="stylesheet" href="assets/css/home.css">
-</head>
+    <link rel="stylesheet" href="assets/css/home.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="index.html">
-            <h1>Murder Who Wrote?</h1>
-        </a>
+      <a href="index.html">
+        <h1>Murder Who Wrote?</h1>
+      </a>
     </header>
     <div class="flex-container">
-
-        <div id="endPage" class="flex-center flex-column">
-            <h2 id="yourScore"></h2>
-            <form>
-                <input type="text" name="name" id="playerName" placeholder="Player Name">
-                <button type="submit" class="button" id="playerScoreButton" onclick="savePlayerScore(event)" disabled>Save</button>
-            </form>
-            <div><a href="quiz.html" class="button">Play Again</a> </div>
-            <div><a href="index.html" class="button">Home</a></div>
-        </div>
+      <div id="endPage" class="flex-center flex-column">
+        <h2>Your Score: <span id="yourScore">0</span></h2>
+        <form id="scorePad">
+          <input
+            type="text"
+            name="name"
+            id="playerName"
+            placeholder="Player Name"
+          />
+          <button type="submit" class="button" id="playerScoreButton" disabled>
+            Save
+          </button>
+        </form>
+        <div><a href="quiz.html" class="button">Play Again</a></div>
+        <div><a href="index.html" class="button">Home</a></div>
+      </div>
     </div>
     <script src="assets/scripts/end.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,14 +1,9 @@
- [
+[
   {
     "id": 1,
     "category": "Miss Marple",
     "question": "What is Miss Marple's first name?",
-    "options": [
-      "Julia",
-      "Jane",
-      "Joan",
-      "June"
-    ],
+    "options": ["Julia", "Jane", "Joan", "June"],
     "answer_index": 1
   },
   {
@@ -27,12 +22,7 @@
     "id": 3,
     "category": "Miss Marple",
     "question": "Which hobby is Miss Marple most associated with?",
-    "options": [
-      "Gardening",
-      "Fishing",
-      "Knitting",
-      "Painting"
-    ],
+    "options": ["Gardening", "Fishing", "Knitting", "Painting"],
     "answer_index": 2
   },
   {
@@ -159,12 +149,7 @@
     "id": 14,
     "category": "Miss Marple",
     "question": "Which recurring character in Miss Marple is the local doctor in St. Mary Mead?",
-    "options": [
-      "Dr. Haydock",
-      "Dr. Owen",
-      "Dr. Sheppard",
-      "Dr. Kennedy"
-    ],
+    "options": ["Dr. Haydock", "Dr. Owen", "Dr. Sheppard", "Dr. Kennedy"],
     "answer_index": 0
   },
   {
@@ -243,12 +228,7 @@
     "id": 21,
     "category": "Hercule Poirot",
     "question": "Hercule Poirot’s nationality is:",
-    "options": [
-      "French",
-      "Swiss",
-      "Dutch",
-      "Belgian"
-    ],
+    "options": ["French", "Swiss", "Dutch", "Belgian"],
     "answer_index": 3
   },
   {
@@ -435,12 +415,7 @@
     "id": 37,
     "category": "Hercule Poirot",
     "question": "Poirot is often contrasted with which other Christie sleuth for methods?",
-    "options": [
-      "Nero Wolfe",
-      "Sherlock Holmes",
-      "Miss Marple",
-      "Father Brown"
-    ],
+    "options": ["Nero Wolfe", "Sherlock Holmes", "Miss Marple", "Father Brown"],
     "answer_index": 2
   },
   {
@@ -483,24 +458,14 @@
     "id": 41,
     "category": "Murder, She Wrote",
     "question": "Jessica Fletcher’s primary profession is:",
-    "options": [
-      "Lawyer",
-      "Journalist",
-      "Police officer",
-      "Mystery novelist"
-    ],
+    "options": ["Lawyer", "Journalist", "Police officer", "Mystery novelist"],
     "answer_index": 3
   },
   {
     "id": 42,
     "category": "Murder, She Wrote",
     "question": "Jessica Fletcher lives in the town of:",
-    "options": [
-      "St. Mary Mead",
-      "Causton",
-      "Kings Abbot",
-      "Cabot Cove"
-    ],
+    "options": ["St. Mary Mead", "Causton", "Kings Abbot", "Cabot Cove"],
     "answer_index": 3
   },
   {
@@ -543,24 +508,14 @@
     "id": 46,
     "category": "Murder, She Wrote",
     "question": "Jessica Fletcher’s often-involved relative is her nephew:",
-    "options": [
-      "Grady",
-      "Tom",
-      "Ben",
-      "Jamie"
-    ],
+    "options": ["Grady", "Tom", "Ben", "Jamie"],
     "answer_index": 0
   },
   {
     "id": 47,
     "category": "Murder, She Wrote",
     "question": "Jessica frequently travels to which major city where she also keeps an apartment?",
-    "options": [
-      "Chicago",
-      "Boston",
-      "Los Angeles",
-      "New York City"
-    ],
+    "options": ["Chicago", "Boston", "Los Angeles", "New York City"],
     "answer_index": 3
   },
   {
@@ -579,12 +534,7 @@
     "id": 49,
     "category": "Murder, She Wrote",
     "question": "Home of Murder She Wrote, Cabot Cove is located in which U.S. state?",
-    "options": [
-      "Vermont",
-      "Massachusetts",
-      "Maine",
-      "New Hampshire"
-    ],
+    "options": ["Vermont", "Massachusetts", "Maine", "New Hampshire"],
     "answer_index": 2
   },
   {
@@ -603,12 +553,7 @@
     "id": 51,
     "category": "Murder, She Wrote",
     "question": "Which later Cabot Cove sheriff often works with Jessica in Muder, She Wrote?",
-    "options": [
-      "Andy Broom",
-      "Mort Metzger",
-      "Amos Tupper",
-      "Clive Barnaby"
-    ],
+    "options": ["Andy Broom", "Mort Metzger", "Amos Tupper", "Clive Barnaby"],
     "answer_index": 1
   },
   {
@@ -711,24 +656,14 @@
     "id": 60,
     "category": "Murder, She Wrote",
     "question": "Murder, she wrote originally aired on which U.S. network?",
-    "options": [
-      "NBC",
-      "ABC",
-      "CBS",
-      "PBS"
-    ],
+    "options": ["NBC", "ABC", "CBS", "PBS"],
     "answer_index": 2
   },
   {
     "id": 61,
     "category": "Midsomer Murders",
     "question": "Midsomer Murders is set in the fictional English county of:",
-    "options": [
-      "Midsomer",
-      "Wessex",
-      "Mid-Yard",
-      "Barsetshire"
-    ],
+    "options": ["Midsomer", "Wessex", "Mid-Yard", "Barsetshire"],
     "answer_index": 0
   },
   {
@@ -747,24 +682,14 @@
     "id": 63,
     "category": "Midsomer Murders",
     "question": "The principal town and police HQ in Midsomer Murders are based in:",
-    "options": [
-      "Oxford",
-      "St. Mary Mead",
-      "Kingsmarkham",
-      "Causton"
-    ],
+    "options": ["Oxford", "St. Mary Mead", "Kingsmarkham", "Causton"],
     "answer_index": 3
   },
   {
     "id": 64,
     "category": "Midsomer Murders",
     "question": "Which sergeant first partners with Tom Barnaby in Midsomer Murders?",
-    "options": [
-      "Dan Scott",
-      "Ben Jones",
-      "Gavin Troy",
-      "Charlie Nelson"
-    ],
+    "options": ["Dan Scott", "Ben Jones", "Gavin Troy", "Charlie Nelson"],
     "answer_index": 2
   },
   {
@@ -795,12 +720,7 @@
     "id": 67,
     "category": "Midsomer Murders",
     "question": "The series Midsomer Murders is based on novels by:",
-    "options": [
-      "Ann Cleeves",
-      "Caroline Graham",
-      "P.D. James",
-      "Ruth Rendell"
-    ],
+    "options": ["Ann Cleeves", "Caroline Graham", "P.D. James", "Ruth Rendell"],
     "answer_index": 1
   },
   {
@@ -819,24 +739,14 @@
     "id": 69,
     "category": "Midsomer Murders",
     "question": "Tom Barnaby’s wife in Midsomer Murders is named:",
-    "options": [
-      "Fiona",
-      "Joyce",
-      "Olivia",
-      "Sarah"
-    ],
+    "options": ["Fiona", "Joyce", "Olivia", "Sarah"],
     "answer_index": 1
   },
   {
     "id": 70,
     "category": "Midsomer Murders",
     "question": "Which sergeant in Midsomer Murders partners with John Barnaby early in his tenure?",
-    "options": [
-      "Charlie Nelson",
-      "Ben Jones",
-      "Gavin Troy",
-      "Jamie Winter"
-    ],
+    "options": ["Charlie Nelson", "Ben Jones", "Gavin Troy", "Jamie Winter"],
     "answer_index": 1
   },
   {
@@ -855,24 +765,14 @@
     "id": 72,
     "category": "Midsomer Murders",
     "question": "Which broadcaster originally aired Midsomer Murders in the UK?",
-    "options": [
-      "Sky One",
-      "BBC One",
-      "Channel 4",
-      "ITV"
-    ],
+    "options": ["Sky One", "BBC One", "Channel 4", "ITV"],
     "answer_index": 3
   },
   {
     "id": 73,
     "category": "Midsomer Murders",
     "question": "John Barnaby’s wife in Midsomer Murders is named:",
-    "options": [
-      "Joyce",
-      "Laura",
-      "Sarah",
-      "Cully"
-    ],
+    "options": ["Joyce", "Laura", "Sarah", "Cully"],
     "answer_index": 2
   },
   {
@@ -891,36 +791,21 @@
     "id": 75,
     "category": "Midsomer Murders",
     "question": "Tom Barnaby’s daughter in Midsomer Murders is named:",
-    "options": [
-      "Sally",
-      "Molly",
-      "Polly",
-      "Cully"
-    ],
+    "options": ["Sally", "Molly", "Polly", "Cully"],
     "answer_index": 3
   },
   {
     "id": 76,
     "category": "Midsomer Murders",
     "question": "Which sergeant follows Ben Jones in Midsomer Murders?",
-    "options": [
-      "Dan Scott",
-      "Gavin Troy",
-      "Charlie Nelson",
-      "Jamie Winter"
-    ],
+    "options": ["Dan Scott", "Gavin Troy", "Charlie Nelson", "Jamie Winter"],
     "answer_index": 2
   },
   {
     "id": 77,
     "category": "Midsomer Murders",
     "question": "In Midsomer Murders Jamie Winter is a later partner to which Barnaby?",
-    "options": [
-      "Tom Barnaby",
-      "John Barnaby",
-      "Neither",
-      "Both"
-    ],
+    "options": ["Tom Barnaby", "John Barnaby", "Neither", "Both"],
     "answer_index": 1
   },
   {
@@ -963,12 +848,7 @@
     "id": 81,
     "category": "Columbo",
     "question": "Lt. Columbo works for which police department?",
-    "options": [
-      "NYPD",
-      "Chicago PD",
-      "LAPD",
-      "SFPD"
-    ],
+    "options": ["NYPD", "Chicago PD", "LAPD", "SFPD"],
     "answer_index": 2
   },
   {
@@ -987,12 +867,7 @@
     "id": 83,
     "category": "Columbo",
     "question": "Who portrayed Columbo?",
-    "options": [
-      "Peter Graves",
-      "Telly Savalas",
-      "Jack Klugman",
-      "Peter Falk"
-    ],
+    "options": ["Peter Graves", "Telly Savalas", "Jack Klugman", "Peter Falk"],
     "answer_index": 3
   },
   {
@@ -1011,36 +886,21 @@
     "id": 85,
     "category": "Columbo",
     "question": "Columbo’s trademark outerwear is a:",
-    "options": [
-      "Rumpled raincoat",
-      "Trench cape",
-      "Peacoat",
-      "Leather jacket"
-    ],
+    "options": ["Rumpled raincoat", "Trench cape", "Peacoat", "Leather jacket"],
     "answer_index": 0
   },
   {
     "id": 86,
     "category": "Columbo",
     "question": "Columbo’s car is famously a:",
-    "options": [
-      "Citroën DS",
-      "VW Beetle",
-      "Fiat 500",
-      "Peugeot 403"
-    ],
+    "options": ["Citroën DS", "VW Beetle", "Fiat 500", "Peugeot 403"],
     "answer_index": 3
   },
   {
     "id": 87,
     "category": "Columbo",
     "question": "Columbo’s pet basset hound is named:",
-    "options": [
-      "Buddy",
-      "Rusty",
-      "Colby",
-      "Dog"
-    ],
+    "options": ["Buddy", "Rusty", "Colby", "Dog"],
     "answer_index": 3
   },
   {
@@ -1071,12 +931,7 @@
     "id": 90,
     "category": "Columbo",
     "question": "Columbo frequently mentions his:",
-    "options": [
-      "Daughter",
-      "Wife",
-      "Brother",
-      "Neighbor"
-    ],
+    "options": ["Daughter", "Wife", "Brother", "Neighbor"],
     "answer_index": 1
   },
   {
@@ -1119,12 +974,7 @@
     "id": 94,
     "category": "Columbo",
     "question": "Columbo’s preferred vice is:",
-    "options": [
-      "Pipes",
-      "Chewing tobacco",
-      "Cigars",
-      "Cigarettes"
-    ],
+    "options": ["Pipes", "Chewing tobacco", "Cigars", "Cigarettes"],
     "answer_index": 2
   },
   {
@@ -1167,12 +1017,7 @@
     "id": 98,
     "category": "Columbo",
     "question": "Which beverage or food item does Columbo occasionally use to build rapport?",
-    "options": [
-      "Caviar",
-      "Fine wine",
-      "Chili or coffee",
-      "Champagne"
-    ],
+    "options": ["Caviar", "Fine wine", "Chili or coffee", "Champagne"],
     "answer_index": 2
   },
   {

@@ -1,62 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
-    <link rel="icon" sizes="16x16" href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-16.png">
-    <link rel="icon" sizes="32x32" href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-32.png">
-    <link rel="icon" sizes="96x96" href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-96.png">
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-16.png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-32.png"
+    />
+    <link
+      rel="icon"
+      sizes="96x96"
+      href="assets/favicon/web/icons8-magnifying-glass-tilted-left-emoji-96.png"
+    />
     <!-- Stylesheet -->
 
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/home.css" />
     <!-- Page Title -->
     <title>Murder Who Wrote?</title>
+  </head>
 
-</head>
-
-<body class="flex-container">
-
-        <header>
-        <a href="index.html">
-            <h1>Murder Who Wrote?</h1>
-        </a>
-        </header>
-        <header id="hud">
-  <div class="hud-item">
-    <span id="progressText">Question 1 / 20</span>
-    <div class="progress" role="progressbar" aria-label="Quiz progress"
-         aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-      <div id="progressBar"></div>
-    </div>
-  </div>
-
-  <div class="hud-item score">
-    <span class="score-label">Score</span>
-    <strong id="score">0</strong>
-  </div>
-</header>
-<div id="quizArea">
-    <h2 id="question"></h2>
-            <div class="quiz-container">
-                <p class="option-prefix">A</p>
-                <p class="options"  answer_index ="1"></p>
-            </div>
-            <div class="quiz-container">
-                <p class="option-prefix">B</p>
-                <p class="options" answer_index="2"></p>
-            </div>
-            <div class="quiz-container">
-                <p class="option-prefix">C</p>
-                <p class="options" answer_index="3"></p>
-            </div>
-            <div class="quiz-container">
-                <p class="option-prefix">D</p>
-                <p class="options" answer_index= 4></p>
-            </div>
+  <body class="flex-container">
+    <header>
+      <a href="index.html">
+        <h1>Murder Who Wrote?</h1>
+      </a>
+    </header>
+    <header id="hud">
+      <div class="hud-item">
+        <span id="progressText">Question 1 / 20</span>
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Quiz progress"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+        >
+          <div id="progressBar"></div>
         </div>
-<script src="assets/scripts/quiz.js"></script>   
-</body>
+      </div>
 
+      <div class="hud-item score">
+        <span class="score-label">Score</span>
+        <strong id="score">0</strong>
+      </div>
+    </header>
+    <div id="quizArea">
+      <h2 id="question"></h2>
+      <div class="quiz-container">
+        <p class="option-prefix">A</p>
+        <p class="options" answer_index="1"></p>
+      </div>
+      <div class="quiz-container">
+        <p class="option-prefix">B</p>
+        <p class="options" answer_index="2"></p>
+      </div>
+      <div class="quiz-container">
+        <p class="option-prefix">C</p>
+        <p class="options" answer_index="3"></p>
+      </div>
+      <div class="quiz-container">
+        <p class="option-prefix">D</p>
+        <p class="options" answer_index="4"></p>
+      </div>
+    </div>
+    <script src="assets/scripts/quiz.js"></script>
+  </body>
 </html>

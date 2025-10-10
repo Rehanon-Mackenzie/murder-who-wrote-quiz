@@ -1,29 +1,54 @@
-const playerName = document.getElementById('playerName')
-const playerScoreButton = document.getElementById('playerScoreButton')
-const yourScore = document.getElementById('yourScore');
-const mostRecentScore = localStorage.getItem('mostRecentScore')
-yourScore.innerText = mostRecentScore
+// end.js
+document.addEventListener("DOMContentLoaded", () => {
+  const MAX_HIGH_SCORES = 10;
 
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-const MAX_HIGH_SCORES = 10;
+  const playerName = document.getElementById("playerName");
+  const playerScoreButton = document.getElementById("playerScoreButton");
+  const yourScore = document.getElementById("yourScore");
+  const scorePad = document.getElementById("scorePad");
 
+  // robustly read score (defaults to 0 if missing)
+  const mostRecentScore = Number(localStorage.getItem("mostRecentScore") || 0);
+  if (yourScore) yourScore.textContent = String(mostRecentScore);
 
-playerName.addEventListener('keyup', () => {
-    playerScoreButton.disabled = !playerName.value;
-})
+  // enable/disable Save button as user types
+  function updateButtonState() {
+    playerScoreButton.disabled = !(playerName.value.trim().length > 0);
+  }
+  updateButtonState();
+  playerName.addEventListener("input", updateButtonState);
 
-function savePlayerScore (event) {
-event.preventDefault();
+  function parseHighScoresSafe() {
+    const score = localStorage.getItem("highScores");
+    if (!score) return [];
+    try {
+      const safeScores = JSON.parse(score);
+      return Array.isArray(safeScores) ? safeScores : [];
+    } catch (event) {
+      console.warn("[end] invalid highScores JSON; resetting.", event);
+      return [];
+    }
+  }
 
-  const raw = playerName.value;
-  const safeName = raw.replace(/[<>]/g, '').trim().slice(0, 20);
-  if (!safeName) return;
+  // handle Save
+  scorePad.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-  const entry = {score: Number(mostRecentScore), playerName: safeName };
-highScores.push(entry);
-highScores.sort((a, b) => b.score - a.score)
-highScores.splice(MAX_HIGH_SCORES);
+    const safeName = (playerName.value || "")
+      .replace(/[<>]/g, "")
+      .trim()
+      .slice(0, 20);
+    if (!safeName) return;
 
-localStorage.setItem('highScores', JSON.stringify(highScores));
-window.location.assign('index.html');
-}
+    const scoreToSave = Number.isFinite(mostRecentScore) ? mostRecentScore : 0;
+
+    const highScores = parseHighScoresSafe();
+    highScores.push({ score: mostRecentScore, playerName: safeName });
+    highScores.sort((a, b) => b.score - a.score);
+    highScores.splice(MAX_HIGH_SCORES);
+
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+    // go to leaderboard page (this matches your first HTML block)
+    window.location.assign("index.html"); // or 'highscores.html' if you keep it separate
+  });
+});
