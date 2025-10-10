@@ -1,12 +1,9 @@
-/*jslint browser */
-/*global document, window */
+/* jshint esversion: 8 */
+/* Index JS */
 
-(function () {
-    "use strict";
-
-    var openModalButtons = document.querySelectorAll("[data-modal-target]");
-    var closeModalButtons = document.querySelectorAll("[data-close-button]");
-    var overlay = document.getElementById("overlay");
+    let openModalButtons = document.querySelectorAll("[data-modal-target]");
+    let closeModalButtons = document.querySelectorAll("[data-close-button]");
+    let overlay = document.getElementById("overlay");
 
     function openModal(modal) {
         if (modal === null) {
@@ -45,5 +42,4 @@
         document.querySelectorAll(".modal.active").forEach(function (m) {
             closeModal(m);
         });
-    });
 }());

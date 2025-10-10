@@ -1,7 +1,9 @@
+/* jshint esversion: 8 */
+/* Quiz JS */
+
 const question = document.getElementById("question");
 const options = Array.from(document.querySelectorAll(".options"));
 const rows = Array.from(document.querySelectorAll(".quiz-container"));
-const quiz = document.getElementById("quizArea");
 const progressText = document.getElementById("progressText");
 const progressBar = document.getElementById("progressBar");
 const scoreEl = document.getElementById("score");
@@ -36,7 +38,7 @@ loadQuestions();
 const correct_bonus = 10;
 const max_questions = 20;
 
-startQuiz = () => {
+function startQuiz () {
   questionNumber = 0;
   score = 0;
   scoreEl.textContent = "0";
@@ -53,9 +55,9 @@ startQuiz = () => {
   }
   availableQuestions = availableQuestions.slice(0, max_questions);
   getNextQuestion();
-};
+}
 
-getNextQuestion = () => {
+function getNextQuestion () {
   if (questionNumber >= max_questions || availableQuestions.length === 0) {
     finishQuiz();
     return;
@@ -69,9 +71,9 @@ getNextQuestion = () => {
   //  set options text
   options.forEach((option, i) => {
     option.innerText = currentQuestionItem.options[i] || "";
-    option.dataset.index = i;
+    option.dataset.answerIndex = String(i);
   });
-};
+}
 
 function finishQuiz() {
   localStorage.setItem("mostRecentScore", score);
@@ -84,7 +86,7 @@ options.forEach((option) => {
     if (!acceptingAnswers) return;
     acceptingAnswers = false; // or false if you want to lock after first click
 
-    const chosen = Number(option.dataset.index);
+    const chosen = Number(option.dataset.answerIndex);
     const correct = currentQuestionItem.answer_index;
     const result = chosen === correct ? "correct" : "incorrect";
 
@@ -100,8 +102,7 @@ options.forEach((option) => {
       const correctOption = options.find(
         (o) => Number(o.dataset.index) === correct,
       );
-      const correctRow = correctOption
-        ? correctOption.closest(".quiz-container")
+      const correctRow = correctOption ? correctOption.closest(".quiz-container")
         : null;
       if (correctRow) {
         correctRow.classList.add("correct");

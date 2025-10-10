@@ -1,5 +1,6 @@
-// end.js
-document.addEventListener("DOMContentLoaded", () => {
+/* jshint esversion: 8 */
+/* End JS */
+
   const MAX_HIGH_SCORES = 10;
 
   const playerName = document.getElementById("playerName");
@@ -13,8 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // enable/disable Save button as user types
   function updateButtonState() {
-    playerScoreButton.disabled = !(playerName.value.trim().length > 0);
-  }
+  const hasName = playerName.value.trim().length > 0;
+  playerScoreButton.disabled = !hasName;
+}
   updateButtonState();
   playerName.addEventListener("input", updateButtonState);
 
@@ -40,8 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .slice(0, 20);
     if (!safeName) return;
 
-    const scoreToSave = Number.isFinite(mostRecentScore) ? mostRecentScore : 0;
-
     const highScores = parseHighScoresSafe();
     highScores.push({ score: mostRecentScore, playerName: safeName });
     highScores.sort((a, b) => b.score - a.score);
@@ -50,5 +50,4 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("highScores", JSON.stringify(highScores));
     // go to leaderboard page (this matches your first HTML block)
     window.location.assign("index.html"); // or 'highscores.html' if you keep it separate
-  });
 });
