@@ -1,6 +1,15 @@
 # Murder Who Wrote?
 
----
+Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io/murder-who-wrote-quiz/index.html)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/Rehanon-Mackenzie/murder-who-wrote-quiz?style=for-the-badge&color=red)
+![GitHub contributors](https://img.shields.io/github/contributors/Rehanon-Mackenzie/murder-who-wrote-quiz?style=for-the-badge&color=orange)
+![Github language count](https://img.shields.io/github/languages/count/rehanon-mackenzie/murder-who-wrote-quiz?style=for-the-badge&color=yellow
+)
+![GitHub top language](https://img.shields.io/github/languages/top/Rehanon-Mackenzie/murder-who-wrote-quiz?style=for-the-badge&color=green
+)
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Frehanon-mackenzie.github.io%2Fmurder-who-wrote-quiz%2F&style=for-the-badge
+)
 
 ## Table of Contents
 
@@ -58,6 +67,8 @@ In honour of each of the detectives included in the quiz I went for a colour tha
 * #F2C57C is a warm beige and the colour of Columbo's raincoat once it's had a good wash.
 * #628B48 is a woodland green and captures the landscape of many of the locations in Midsomer Murders.
 * #D00000 is a brilliant red and the colour of book that forms the iconic title sequence to each episode of Murder She Wrote.
+
+The background for each page is #F2C57C as it provides a good contrast with the text.  H1
 
 
 ![Colour Palette](/documentation/Murder%20Who%20Wrote%20colour%20palette.png)
