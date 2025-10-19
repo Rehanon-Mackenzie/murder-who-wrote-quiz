@@ -1,4 +1,4 @@
-## Validation
+## Validation Testing
 
 ### HTML Validation
 
@@ -10,7 +10,7 @@ Common issues such as invalid attributes (answer_index) and empty headings were 
 
 - Replaced answer_index with valid HTML5 data-answer-index.
 
-- Added comments/placeholder text inside dynamic <h2> headings.
+- Added comments/placeholder text inside dynamic h2 headings.
 
 | File              | Screenshot                                                        | Notes                                                   |
 | ----------------- | ----------------------------------------------------------------- | ------------------------------------------------------- |
