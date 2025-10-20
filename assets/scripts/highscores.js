@@ -1,4 +1,21 @@
-/* jshint esversion: 8 */
+/**
+ * Murder Who Wrote? — highscores.js
+ * ---------------------------------
+ * Author: Rehanon Mackenzie
+ * Description:
+ *   Retrieves saved scores from localStorage and displays
+ *   them as a sorted leaderboard.
+ *
+ * Associated Page: highscores.html
+ *
+ * Features:
+ *   - Fetches scores from localStorage
+ *   - Sorts and displays top results
+ *   - Provides option to clear stored scores
+ *
+ * Last updated: 20 Oct 2025
+ * 
+ *//* jshint esversion: 8 */
 /* High scores JS */
 
  document.addEventListener("DOMContentLoaded", () => {

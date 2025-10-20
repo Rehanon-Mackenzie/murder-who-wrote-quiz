@@ -1,3 +1,22 @@
+/**
+ * Murder Who Wrote? — quiz.js
+ * ---------------------------------
+ * Author: Rehanon Mackenzie
+ * Description:
+ *   Core quiz functionality — handles question display, scoring,
+ *   and visual feedback for correct/incorrect answers.
+ *
+ * Associated Page: quiz.html
+ *
+ * Features:
+ *   - Loads questions dynamically
+ *   - Tracks current question index and score
+ *   - Provides progress bar updates
+ *   - Stores player score in localStorage
+ *
+ * Last updated: 20 Oct 2025
+ */
+
 /* jshint esversion: 8 */
 /* Quiz JS */
 

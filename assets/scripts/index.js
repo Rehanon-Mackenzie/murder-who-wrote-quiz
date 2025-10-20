@@ -1,3 +1,22 @@
+/**
+ * Murder Who Wrote? — index.js
+ * ---------------------------------
+ * Author: Rehanon Mackenzie
+ * Description:
+ *   Controls interactions on the home page, including
+ *   the modal instructions window and navigation to other pages.
+ *
+ * Associated Page: index.html
+ *
+ * Features:
+ *   - Opens and closes instruction modal
+ *   - Handles overlay visibility and click events
+ *   - Provides entry point to quiz and highscores pages
+ *
+ * Last updated: 20 Oct 2025
+ */
+
+
 /* jshint esversion: 8 */
 /* Index JS */
 
@@ -22,6 +41,7 @@
     }
 
     // Open via buttons
+    
     openModalButtons.forEach(function (button) {
         button.addEventListener("click", function () {
             var modal = document.querySelector(button.dataset.modalTarget);

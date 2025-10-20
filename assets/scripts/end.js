@@ -1,3 +1,21 @@
+/**
+ * Murder Who Wrote? — end.js
+ * ---------------------------------
+ * Author: Rehanon Mackenzie
+ * Description:
+ *   Manages the final score display and saving the player's
+ *   name and score to localStorage for the leaderboard.
+ *
+ * Associated Page: end.html
+ *
+ * Features:
+ *   - Displays final score
+ *   - Handles name input and validation
+ *   - Saves data to localStorage
+ *
+ * Last updated: 20 Oct 2025
+ */
+
 /* jshint esversion: 8 */
 /* End JS */
 

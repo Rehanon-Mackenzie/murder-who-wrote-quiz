@@ -1,3 +1,5 @@
+/* Murder Who Wrote? CSS */
+
 /* fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
@@ -23,8 +25,6 @@
   box-sizing: border-box;
 }
 
-/* Base link styling in the header title */
-
 html,
 body {
   margin: 0;
@@ -48,13 +48,6 @@ header h1 a:hover {
   /* mobile/touch version */
 @media (hover: none) and (pointer: coarse) {
   header h1 a:active { color: var(--secondary-color); }
-}
-
-/* Keyboard accessibility */
-
-header h1 a:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
 }
 
 h1,
@@ -106,21 +99,6 @@ h2 {
   color: var(--primary-color)
 }
 
-button,
-a.button {
-  display: block;
-  width: 60%;
-  margin: 10px auto;
-  color: black;
-  text-align: center;
-  font-size: 1.1em;
-  font-family: var(--secondary-font);
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
-  text-decoration: none;
-  background-color: #F2C57C;
-}
 
 .option-prefix {
   font: var(--secondary-font);
@@ -150,6 +128,26 @@ a.button {
 .options {
   transition: background-color 200ms ease;
 }
+
+/* buttons */
+
+button,
+a.button {
+  display: block;
+  width: 60%;
+  margin: 10px auto;
+  color: black;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: var(--secondary-font);
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #F2C57C;
+}
+
+/* Progress & Score */
 
 #hud {
   display: flex;
@@ -245,9 +243,9 @@ a.button {
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
-  font-size: 1.25rem; /* slightly larger for balance */
-  line-height: 1; /* keep tight vertical rhythm */
-  color: #666; /* medium grey – softer look */
+  font-size: 1.25rem; 
+  line-height: 1; 
+  color: #666; 
   border-radius: 50%;
   transition:
     color 0.15s ease,
@@ -255,7 +253,7 @@ a.button {
 }
 .close-instructions:hover {
   color: #000; /* darker on hover */
-  transform: scale(1.1); /* subtle feedback */
+  transform: scale(1.1);
   background-color: rgba(0, 0, 0, 0.08);
   border-radius: 6px;
 }
