@@ -3,7 +3,25 @@
 
 Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io/murder-who-wrote-quiz/index.html)
 
-## Automated Testing
+## Contents
+* [Automated Testing](#automated-testing)
+    * [Validation Testing](#validation-testing)
+        * [HTML Validation](#html-validation)
+        * [CSS Validation](#css-validation)
+        * [JavaScript Validation](#javascript-validation-jshint)
+        * [Lighthouse Testing](#lighthouse-testing)
+* [Manual Testing](#manual-testing)
+    * [Testing User Stories](#testing-user-stories)
+    * [Full Testing](#full-testing)
+        * [Responsiveness](#responsiveness)
+        * [Browser Compatibility](#browser-compatibility)
+        * [Summary](#summary)
+
+The testing process was ongoing thorough out the development of the quiz and it is true what they say the best way to learn is doing. 
+
+I used the console throughout to test code and error check as I went.  The tutorials from Code Institute on using Google Development Tools was really useful.  I made good use of the Sources tab and was regularly adding breakpoints to my code to find out was actually going on.
+
+In future I will keep a debugging diary because I think this will be a really good way of visualising my learning.
 
 ### Validation Testing
 
@@ -35,7 +53,7 @@ The file was found to have no errors as evidenced here:
 ![CSS validation](testing/CSS-validator-murder-who-wrote.png)
 
 
-#### JavaScipt Validation (JSHint)
+#### JavaScript Validation (JSHint)
 
 | File            | Screenshot                                                 | Notes                                                           |
 | --------------- | ---------------------------------------------------------- | --------------------------------------------------------------- |
@@ -46,15 +64,20 @@ The file was found to have no errors as evidenced here:
 
 #### Lighthouse Testing
 
-I used the Lighthouse extension with in Chrome Developer Tools to test performance, accessibility, best practices and SEO of the website.
+I used the Lighthouse extension within Chrome Developer Tools to test performance, accessibility, best practices and SEO of the website.
 
 ![Home page lighthouse](/testing/lighthouse%20desktop.PNG)
+*Home: Performance 99, Accessibility 100, Best Practices 100, SEO 100*
 
 ![Quiz page lighthouse](/testing/lighthouse%20quiz%20desktop.PNG)
+*Quiz: Performance 98, Accessibility 100, Best Practices 100, SEO 90*
 
 ![End page lighthouse](/testing/lighthouse%20end%20desktop.PNG)
+*End: Performance 97, Accessibility 100, Best Practices 100, SEO 90*
 
 ![Highscore page lighthouse](/testing/lighthouse%20highscores%20desktop.PNG)
+*High Scores: Performance 100, Accessibility 100, Best Practices 100, SEO 90*
+
 
 ## Manual Testing
 
@@ -73,7 +96,7 @@ I used the Lighthouse extension with in Chrome Developer Tools to test performan
 
 |  Goals | How are they achieved? |
 | :--- | :--- |
-|I want to be able to see the answers to the questions I answered incorrectly. | If a user chooses an incorrect answer the correct answer will be displayed by a dyanmic changing background colour also. Before the quiz transitions to the next question. |
+|I want to be able to see the answers to the questions I answered incorrectly. | If a user chooses an incorrect answer the correct answer will be displayed by a dynamic changing background colour also. Before the quiz transitions to the next question. |
 
 `Frequent Visitors`
 
@@ -83,7 +106,7 @@ I used the Lighthouse extension with in Chrome Developer Tools to test performan
 
 ### Full Testing
 
-### Responsiveness
+#### Responsiveness
 
 Tested on physical devices and Chrome DevTools presets.
 
@@ -94,7 +117,7 @@ Tested on physical devices and Chrome DevTools presets.
 | Laptop (1366x768) | Layout stable, hover colours visible | Works as expected | ✅ |
 | Desktop (1920x1080) | Layout scales correctly, all elements visible | Works as expected | ✅ |
 
-### Browser Compatibility
+#### Browser Compatibility
 
 | Browser | Version | Result |
 |----------|----------|--------|
@@ -103,7 +126,7 @@ Tested on physical devices and Chrome DevTools presets.
 | Edge | 128 | Pass |
 | Safari (iOS 17) | Mobile | Pass |
 
-### Summary
+#### Summary
 
 All tests passed successfully. The site performs consistently across devices and browsers, with no functional bugs remaining.
 
