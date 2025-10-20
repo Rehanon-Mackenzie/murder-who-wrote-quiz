@@ -1,6 +1,13 @@
-## Validation Testing
+# Murder Who Wrote? - Testing
+![Murder Who Wrote responsive](/assets/images/murder-who-wrote-responsive.png)
 
-### HTML Validation
+Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io/murder-who-wrote-quiz/index.html)
+
+## Automated Testing
+
+### Validation Testing
+
+#### HTML Validation
 
 Each HTML file was tested using the [W3C Markup Validator](https://validator.w3.org/)
 
@@ -19,7 +26,7 @@ Common issues such as invalid attributes (answer_index) and empty headings were 
 | `end.html`        | ![HTML end validation](testing/HTML-validator-end.png)               | Passed validation cleanly.                              |
 | `highscores.html` | ![HTML highscores validation](testing/HTML-validator-high-scores.png) | Fully valid structure.                                  |
 
-### CSS Validation
+#### CSS Validation
 
 The CSS file was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
@@ -35,7 +42,7 @@ The file was found to have no errors as evidenced here:
 | High scores page               | Displays sorted leaderboard                          | ✔️            | ✔️   |
 | Empty leaderboard              | Displays “No high scores yet — play a game!” message | ✔️            | ✔️   |
 
-### JavaScipt Validation (JSHint)
+#### JavaScipt Validation (JSHint)
 
 | File            | Screenshot                                                 | Notes                                                           |
 | --------------- | ---------------------------------------------------------- | --------------------------------------------------------------- |
@@ -43,3 +50,40 @@ The file was found to have no errors as evidenced here:
 | `quiz.js`       | ![JSHint quiz](testing/JS-hint-quiz.png)             | Updated `data-answer-index` and resolved line break warnings.   |
 | `end.js`        | ![JSHint end](testing/JS-hint-end.png)               | Refactored `!` usage and improved clarity for readability.      |
 | `highscores.js` | ![JSHint highscores](testing/JS-hint-high-scores.png) | Fixed illegal `return` statement and confirmed score rendering. |
+
+#### Lighthouse Testing
+
+I used the Lighthouse extension with in Chrome Developer Tools to test performance, accessibility, best practices and SEO of the website.
+
+![Home page lighthouse](/testing/lighthouse%20desktop.PNG)
+
+![Quiz page lighthouse](/testing/lighthouse%20quiz%20desktop.PNG)
+
+![End page lighthouse](/testing/lighthouse%20end%20desktop.PNG)
+
+![Highscore page lighthouse](/testing/lighthouse%20highscores%20desktop.PNG)
+
+## Manual Testing
+
+### Testing User Stories
+
+`First Time Visitors`
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| I want to test my knowledge on the TV detectives show I love. | Murder Who Wrote? Delivers a randomised selection of questions for users about shows such as Columbo, Poirot and Midsomer Murders |
+| I want the site to be responsive to the device I'm using. | I have developed the site with responsiveness in mind. |
+| I want the site to be easy to navigate. | On every page the user can navigate to return to the home page by clicking on the header logo.  |
+| I want clear instructions on how I play the quiz so I have the best chance of getting a good score. | Clicking on the instructions button on the homepage brings up a modal that explains exactly how to play the quiz.
+
+`Returning Visitors`
+
+|  Goals | How are they achieved? |
+| :--- | :--- |
+|I want to be able to see the answers to the questions I answered incorrectly. | If a user chooses an incorrect answer the correct answer will be displayed by a dyanmic changing background colour also. Before the quiz transitions to the next question. |
+
+`Frequent Visitors`
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| I want to be able to store my score so I can see how I am improving and how I rank against other players. | Users of the site are able to log their high scores to the high scores page. The top ten results will be displayed. |

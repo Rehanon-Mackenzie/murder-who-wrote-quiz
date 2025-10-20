@@ -53,7 +53,7 @@ _Murder Who Wrote?_ gives the player an opportunity to see just how much they kn
 #### First Time Visitor Goals
 
 * I want to test my knowledge on the TV detectives show I love.
-* I want the site to be responsive to the device I'm suing.
+* I want the site to be responsive to the device I'm using.
 * I want to be able to navigate the site easily.
 * I want clear instructions on how I play the quiz so I have the best chance of getting a good score.
 
