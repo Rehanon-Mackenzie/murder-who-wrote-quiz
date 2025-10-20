@@ -24,7 +24,8 @@ Common issues such as invalid attributes (answer_index) and empty headings were 
 | `index.html`      | ![HTML index validation](testing/HTML-validator-index.png)           | Passed with no errors.                                  |
 | `quiz.html`       | ![HTML quiz validation](testing/HTML-validator-quiz.png)             | Updated attributes and resolved empty heading warnings. |
 | `end.html`        | ![HTML end validation](testing/HTML-validator-end.png)               | Passed validation cleanly.                              |
-| `highscores.html` | ![HTML highscores validation](testing/HTML-validator-high-scores.png) | Fully valid structure.                                  |
+| `highscores.html` | ![HTML highscores validation](testing/HTML-validator-high-scores.png) | Fully valid structure.            
+| `404.html` | ![HTML 404 validation](/testing/html-validator-404.PNG)   | Passed with no errors.                   |
 
 #### CSS Validation
 
@@ -33,14 +34,6 @@ The CSS file was tested using the [W3C CSS Validator](https://jigsaw.w3.org/css-
 The file was found to have no errors as evidenced here:
 ![CSS validation](testing/CSS-validator-murder-who-wrote.png)
 
-| Feature                        | Expected Result                                      | Actual Result | Pass |
-| ------------------------------ | ---------------------------------------------------- | ------------- | ---- |
-| Quiz loads questions from JSON | Questions displayed correctly                        | ✔️            | ✔️   |
-| Selecting correct answer       | Score increases by 10 points                         | ✔️            | ✔️   |
-| Selecting incorrect answer     | Correct answer highlighted                           | ✔️            | ✔️   |
-| End screen saves score         | Score stored in LocalStorage                         | ✔️            | ✔️   |
-| High scores page               | Displays sorted leaderboard                          | ✔️            | ✔️   |
-| Empty leaderboard              | Displays “No high scores yet — play a game!” message | ✔️            | ✔️   |
 
 #### JavaScipt Validation (JSHint)
 
@@ -49,7 +42,7 @@ The file was found to have no errors as evidenced here:
 | `index.js`      | ![JSHint index](testing/JS-hint-index.png)           | ES6 syntax validated successfully.                              |
 | `quiz.js`       | ![JSHint quiz](testing/JS-hint-quiz.png)             | Updated `data-answer-index` and resolved line break warnings.   |
 | `end.js`        | ![JSHint end](testing/JS-hint-end.png)               | Refactored `!` usage and improved clarity for readability.      |
-| `highscores.js` | ![JSHint highscores](testing/JS-hint-high-scores.png) | Fixed illegal `return` statement and confirmed score rendering. |
+| `highscores.js` | ![JSHint highscores](testing/JS-hint-high-scores.png) | Fixed illegal `return` statement and confirmed score rendering. 
 
 #### Lighthouse Testing
 
@@ -87,3 +80,38 @@ I used the Lighthouse extension with in Chrome Developer Tools to test performan
 | Goals | How are they achieved? |
 | :--- | :--- |
 | I want to be able to store my score so I can see how I am improving and how I rank against other players. | Users of the site are able to log their high scores to the high scores page. The top ten results will be displayed. |
+
+### Full Testing
+
+### Responsiveness
+
+Tested on physical devices and Chrome DevTools presets.
+
+| Device / Viewport | Expected Result | Actual Result | Pass |
+|--------------------|----------------|----------------|:---:|
+| iPhone SE (375x667) | Content readable, buttons accessible | Works as expected | ✅ |
+| iPad (768x1024) | Layout centered, modal fits screen | Works as expected | ✅ |
+| Laptop (1366x768) | Layout stable, hover colours visible | Works as expected | ✅ |
+| Desktop (1920x1080) | Layout scales correctly, all elements visible | Works as expected | ✅ |
+
+### Browser Compatibility
+
+| Browser | Version | Result |
+|----------|----------|--------|
+| Chrome | 129 | Pass |
+| Firefox | 130 | Pass |
+| Edge | 128 | Pass |
+| Safari (iOS 17) | Mobile | Pass |
+
+### Summary
+
+All tests passed successfully. The site performs consistently across devices and browsers, with no functional bugs remaining.
+
+| Feature                        | Expected Result                                      | Actual Result | Pass |
+| ------------------------------ | ---------------------------------------------------- | ------------- | ---- |
+| Quiz loads questions from JSON | Questions displayed correctly                        | ✔️            | ✔️   |
+| Selecting correct answer       | Score increases by 10 points                         | ✔️            | ✔️   |
+| Selecting incorrect answer     | Correct answer highlighted                           | ✔️            | ✔️   |
+| End screen saves score         | Score stored in LocalStorage                         | ✔️            | ✔️   |
+| High scores page               | Displays sorted leaderboard                          | ✔️            | ✔️   |
+| Empty leaderboard              | Displays “No high scores yet — play a game!” message | ✔️            | ✔️   |

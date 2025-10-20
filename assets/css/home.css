@@ -137,11 +137,13 @@ a.button {
 }
 
 .quiz-container.correct {
-  background-color: #628b48;
+  background-color: #628b48; 
+  /* Midsomer Murder green */ 
 }
 
 .quiz-container.incorrect {
   background-color: #D00000;
+  /* Murder She Wrote Red */
 }
 
 .quiz-container,

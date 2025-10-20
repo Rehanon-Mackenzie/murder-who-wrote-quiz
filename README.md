@@ -29,16 +29,31 @@ Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io
     * [Home Page](#home-page)
     * [Quiz Page](#️️-quiz-page)
     * [End Page](#-end-page)
-    * [Highscore Page](#-high-scores-page)
+    * [High Scores Page](#-high-scores-page)
     * [404 Error Page](#-404-error-page)
     * [Future Implementations](#-future-implementations)
+  * [Accessibility](#accessibility)
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Libraries and Tools Used](#libraries-and-tools-used)
+* [Deployment and Local Development](#deployment--local-development)
+  * [Deployment](#deployment)
+  * [Local Development](#local-development)
+    * [How to Fork](#how-to-fork)
+    * [How to Clone](#how-to-clone)
+ * [Testing](#testing)
+    * [Known Bugs and Fixes](#-known-bugs-and-fixes)
+    * [Known Issues](#known-issues)
+  * [Credits](#credits)
+    * [Code Used](#code-used)
+    * [Content](#content)
+    * [Media](#media)
+  * [Acknowledgments](#acknowledgements)
 
-
-* [Testing](#testing)
 
 ## About
 
-This is a quiz for all the armchair detectives who love nothing better than sitting down with their favourite ficitional gumshoe and solving a murder from the comfort of their own living room.
+This is a quiz for all the armchair detectives who love nothing better than sitting down with their favourite fictional gumshoe and solving a murder from the comfort of their own living room.
 
 Murder mysteries continue to be a universal source of pleasure for people and each generation has its own unsuspecting sleuth or amateur busy body that is able to unpick the clues and workout who dunnit? In 2020 it was the centenary celebration for the first ever murder mystery written by Dame Agatha Christie, _The Mysterious Affair at Styles_. This was the first outing for Hercule Poirot and his famous "little grey cells".
 
@@ -88,7 +103,7 @@ The background for each page is #f2c57c as it provides a good contrast with the 
 
 The fonts for this site were chosen from Google Fonts and were imported using the URL method.
 
-The fonts chosen were 'Corben' and ' Work Sans.
+The fonts chosen were 'Corben' and 'Work Sans'.
 
 Corben italicised was the primary font and used for all of the headings throughout the site.  As it gave the vintage style that is often associated with murder mysteries.
 
@@ -113,7 +128,7 @@ Work Sans was the secondary font used on the site and is the font for all the bo
 #### End Page
 ![End-page-wireframe](/documentation/wireframes/murder%20who%20wrote%20end.png)
 
-#### Highscores Page
+#### High Scores Page
 ![Highscores-page-wireframe](/documentation/wireframes/murder%20who%20highscores.png)
 
 ## Features
@@ -124,7 +139,7 @@ Work Sans was the secondary font used on the site and is the font for all the bo
 
 * The favicon is a small image that displays in the browser tab. 
 * The intention is to enhance the user experience for those who have multiple tabs open and cannot read the text in the tabs.
-* The favicon is a doodle of a magnifying glass.  This was chosen because a magnifying glass is synomous with the murder mystery genre.  It's been used by fictional detectives from as far back as Sherlock Holmes in the Victorian era to more recently Chief Inspector Barnaby in modern day Midsomer.
+* The favicon is a doodle of a magnifying glass.  This was chosen because a magnifying glass is synonymous with the murder mystery genre.  It's been used by fictional detectives from as far back as Sherlock Holmes in the Victorian era to more recently Chief Inspector Barnaby in modern day Midsomer.
 * It was taken from the Icons8 website and is credited in the Media Section 
 
 ![Screenshot of favicon](/documentation/favicon%20example.png)
@@ -190,7 +205,7 @@ Work Sans was the secondary font used on the site and is the font for all the bo
 Whilst coding the quiz I have kept in mind accessibility and ease of use for everyone.  This includes using:
 * Semantic HTML.
 * Hover status on the navigation logo on each page.
-* Using San Serif font for the body text.
+* Using Sans Serif font for the body text.
 * Choosing a contrasting colour palette that makes viewing easier.
 
 ## Technologies Used
@@ -198,7 +213,7 @@ Whilst coding the quiz I have kept in mind accessibility and ease of use for eve
 ### Languages Used
 HTML, CSS, Javascript
 
-### Libraries and Programmes Used
+### Libraries and Tools Used
 * [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
 * [Github](https://github.com/) - For version control and to save and store the files for the website.
@@ -259,4 +274,37 @@ To clone the repository:
 
 ## Testing
 
-Please see the separate [TESTING.md](/Testing.md) file for all the tests carried out.
+### 🐛 Known Bugs and Fixes
+
+Please see the separate [TESTING.md](Testing.md) file for all the tests carried out.
+
+| Issue | Fix | Status | Learning |
+|-------|-----|--------|--------- |
+| Hover colour not appearing in device emulation | Confirmed only in Chrome DevTools — works correctly on actual devices | Fixed | Learned that mobile devices don’t use hover — test differently |
+| Score not saving after refresh (early testing) | Added local storage check before saving | Fixed | Learned how to use Dev Tools  to look at the Application tab to view what is being saved in local storage
+| Minor layout overlap on iPhone SE | Adjusted flex container height and padding | Fixed | Check through the results in each device when making layout changes
+| Correct answer not highlighting when incorrect option clicked | Found that dataset.index instead of dataset.answerIndex had been coded. Updated selector in JS to match HTML attribute | Fixed | Be consistent with naming between HTML attributes and JS selectors |
+| Quiz questions not loading randomly | JSON fetch order was static.  Added the Fisher Yates shuffle function to randomise questions | Fixed | Important to understand the different ways you can shuffle before iterating |
+
+### Known Issues
+
+The project is designed to be responsive from 375px and upwards, in line with the material taught on the course LMS. Minor layout inconsistencies may occur on extra-wide (e.g. 4k/8k monitors), or smart-display devices (e.g. Nest Hub, Smart Watches, Gameboy Color, etc.), as these resolutions are outside the project's scope, as taught by Code Institute.
+
+## Credits
+### Code Used
+* I followed the James Quick quiz [tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8) to get an initial understanding of quiz logic as well as how to use local storage for storing high scores.
+* I watched this [explanation](https://www.youtube.com/watch?v=NfekYmg4vCE) on the Fisher-Yates shuffle to understand how to randomise my array of questions.
+
+### Content
+* All questions for the quiz were formulated using my general knowledge and fed into [Chat GPT](https://chatgpt.com/)
+* All the other content including the introduction was written by myself.
+
+### Media
+
+* [Icons8](https://icons8.com) provided the favicon magnifying glass.
+
+## Acknowledgements
+* Thank you to my mentor Richard  who is always really easy to talk to and explains things in a way that I understand.  
+* As always massive thanks to my dearly departed Nan who got me into murder mysteries in the first place.  She ditched fairytales and instead chose to read us large print Agatha Christie novels.
+* All my friends and family who took time to take the quiz and made sure everything was working and as always gave me loads of encouragement when I was doubting myself.
+* Finally, to all the *wonderful queens of crime* who dominate this genre and have inspired  me to always be curious and trust my intuition.

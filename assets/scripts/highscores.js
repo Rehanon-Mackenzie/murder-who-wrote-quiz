@@ -20,7 +20,7 @@
   
   highScores.forEach(({ playerName, score }) => {
     const li = document.createElement("li");
-    li.textContent = `${playerName} - ${score}`;
+    li.textContent = `PI ${playerName} - ${score}`;
     highScoresList.appendChild(li);
   });
 });

@@ -100,7 +100,7 @@ options.forEach((option) => {
       scoreEl.textContent = String(score);
     } else {
       const correctOption = options.find(
-        (o) => Number(o.dataset.index) === correct,
+        (o) => Number(o.dataset.answerIndex) === correct,
       );
       const correctRow = correctOption ? correctOption.closest(".quiz-container")
         : null;
