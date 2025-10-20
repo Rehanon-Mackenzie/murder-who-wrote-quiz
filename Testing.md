@@ -1,4 +1,4 @@
-# Murder Who Wrote? - Testing
+# Murder Who Wrote? - Testing 🧪
 ![Murder Who Wrote responsive](/assets/images/murder-who-wrote-responsive.png)
 
 Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io/murder-who-wrote-quiz/index.html)
@@ -17,9 +17,9 @@ Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io
         * [Browser Compatibility](#browser-compatibility)
         * [Summary](#summary)
 
-The testing process was ongoing thorough out the development of the quiz and it is true what they say the best way to learn is doing. 
+The testing process was ongoing thoroughout the development of the quiz and it is true what they say the best way to learn is by doing. 
 
-I used the console throughout to test code and error check as I went.  The tutorials from Code Institute on using Google Development Tools was really useful.  I made good use of the Sources tab and was regularly adding breakpoints to my code to find out was actually going on.
+I used the console throughout to test code and error check as I went.  The tutorials from Code Institute on using Google Development Tools were really useful.  I made good use of the Sources tab and was regularly adding breakpoints to my code to find out what was actually going on.
 
 In future I will keep a debugging diary because I think this will be a really good way of visualising my learning.
 
@@ -60,22 +60,22 @@ The file was found to have no errors as evidenced here:
 | `index.js`      | ![JSHint index](testing/JS-hint-index.png)           | ES6 syntax validated successfully.                              |
 | `quiz.js`       | ![JSHint quiz](testing/JS-hint-quiz.png)             | Updated `data-answer-index` and resolved line break warnings.   |
 | `end.js`        | ![JSHint end](testing/JS-hint-end.png)               | Refactored `!` usage and improved clarity for readability.      |
-| `highscores.js` | ![JSHint highscores](testing/JS-hint-high-scores.png) | Fixed illegal `return` statement and confirmed score rendering. 
+| `highscores.js` | ![JSHint highscores](testing/JS-hint-high-scores.png) | Fixed illegal `return` statement and confirmed score rendering. |
 
 #### Lighthouse Testing
 
 I used the Lighthouse extension within Chrome Developer Tools to test performance, accessibility, best practices and SEO of the website.
 
-![Home page lighthouse](/testing/lighthouse%20desktop.PNG)
+![Home page lighthouse](testing/lighthouse%20desktop.PNG)
 *Home: Performance 99, Accessibility 100, Best Practices 100, SEO 100*
 
-![Quiz page lighthouse](/testing/lighthouse%20quiz%20desktop.PNG)
+![Quiz page lighthouse](testing/lighthouse%20quiz%20desktop.PNG)
 *Quiz: Performance 98, Accessibility 100, Best Practices 100, SEO 90*
 
-![End page lighthouse](/testing/lighthouse%20end%20desktop.PNG)
+![End page lighthouse](testing/lighthouse%20end%20desktop.PNG)
 *End: Performance 97, Accessibility 100, Best Practices 100, SEO 90*
 
-![Highscore page lighthouse](/testing/lighthouse%20highscores%20desktop.PNG)
+![Highscore page lighthouse](testing/lighthouse%20highscores%20desktop.PNG)
 *High Scores: Performance 100, Accessibility 100, Best Practices 100, SEO 90*
 
 
@@ -138,3 +138,7 @@ All tests passed successfully. The site performs consistently across devices and
 | End screen saves score         | Score stored in LocalStorage                         | ✔️            | ✔️   |
 | High scores page               | Displays sorted leaderboard                          | ✔️            | ✔️   |
 | Empty leaderboard              | Displays “No high scores yet — play a game!” message | ✔️            | ✔️   |
+
+### 💭 Reflection
+
+At the start I honestly thought JavaScript was going to break my brain.  However, I have learned so much during this process and it has reminded me I can do hard things and I am excited to take this learning into the next module.  
