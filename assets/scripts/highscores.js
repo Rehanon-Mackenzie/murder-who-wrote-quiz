@@ -41,3 +41,15 @@
     highScoresList.appendChild(li);
   });
 });
+
+// Clear high scores
+
+const clearButton = document.getElementById("clearScoresBtn");
+
+if (clearButton) {
+  clearButton.addEventListener("click", () => {
+    localStorage.removeItem("highScores");
+    document.getElementById("highScoresList").innerHTML =
+      '<li class="high-score">No high scores yet — play a game!</li>';
+  });
+}

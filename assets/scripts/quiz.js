@@ -103,7 +103,7 @@ function finishQuiz() {
 options.forEach((option) => {
   option.addEventListener("click", () => {
     if (!acceptingAnswers) return;
-    acceptingAnswers = false; // or false if you want to lock after first click
+    acceptingAnswers = false; // stops player from clicking another answer
 
     const chosen = Number(option.dataset.answerIndex);
     const correct = currentQuestionItem.answer_index;
@@ -132,7 +132,7 @@ options.forEach((option) => {
       rows.forEach((r) => r.classList.remove("correct", "incorrect"));
 
       getNextQuestion();
-      acceptingAnswers = true; // re-enable if you locked it
+      acceptingAnswers = true; // unlocks the choices on the next question 
     }, 1000);
   });
 });
@@ -140,8 +140,7 @@ function updateHud() {
   // Text: “Question X / N”
   progressText.textContent = `Question ${questionNumber} / ${max_questions}`;
 
-  // Fill: show completed questions. If you’d rather include the current
-  // question in the fill, use `questionNumber` instead of `questionNumber - 1`.
+
   const pct = Math.round(((questionNumber - 1) / max_questions) * 100);
   progressBar.style.width = `${pct}%`;
   progressBar.parentElement.setAttribute("aria-valuenow", String(pct));

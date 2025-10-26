@@ -4,6 +4,7 @@
 Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io/murder-who-wrote-quiz/index.html)
 
 ## Contents
+* [Overview of Testing]
 * [Automated Testing](#automated-testing)
     * [Validation Testing](#validation-testing)
         * [HTML Validation](#html-validation)
@@ -17,11 +18,20 @@ Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io
         * [Browser Compatibility](#browser-compatibility)
         * [Summary](#summary)
 
+
+## Overview of Testing
+
+In developing *Murder Who Wrote?* both automated and testing was employed.  Automat
+
 The testing process was ongoing thoroughout the development of the quiz and it is true what they say the best way to learn is by doing. 
 
 I used the console throughout to test code and error check as I went.  The tutorials from Code Institute on using Google Development Tools were really useful.  I made good use of the Sources tab and was regularly adding breakpoints to my code to find out what was actually going on.
 
 In future I will keep a debugging diary because I think this will be a really good way of visualising my learning.
+
+## Automated Testing
+
+Please see below the various Automated testing that I undertook during development.
 
 ### Validation Testing
 
@@ -125,6 +135,59 @@ Tested on physical devices and Chrome DevTools presets.
 | Firefox | 130 | Pass |
 | Edge | 128 | Pass |
 | Safari (iOS 17) | Mobile | Pass |
+
+#### Home Page Testing
+
+| Feature  | Expected outcome  | Testing performed  | Result  | Pass/Fail  |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| The h1 title encloses a link anchor  | To take the user to index html page  | Click link | Took user to index.html | Pass  |
+| Hover colour change on h1 to identify link | The h1 will change to the secondary colour to identify it's a clickable link | Hover over h1 | h1 changed to secondary colour | Pass|
+|  Instructions button / modal | Modal to pop up with instructions on top of overlay | Click instructions button  | modal pops up  | Pass  |
+|  Close modal | Modal to close when clicked on close x | Click close x | Modal closed and overlay removed  | Pass  |
+| Play button | To take the user to quiz html | Click button | Took user to quiz.html | Pass |
+| High Scores button | To take the user to  highscores html page | Click button  | Took user to highscores.html | Pass  |
+
+#### Quiz Page Testing 
+
+| Feature  | Expected outcome  | Testing performed  | Result  | Pass/Fail  |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| The h1 title encloses a link anchor  | To take the user to index html page  | Click link | Took user to index.html | Pass  |
+| Hover colour change on h1 to identify link | The h1 will change to the secondary colour to identify it's a clickable link | Hover over h1 | h1 changed to secondary colour | Pass|
+| Questions load automatically from JSON | Click an answer option and then the next question appears | Click an answer option | Next question loaded | Pass
+| Correct answer | Click on your chosen answer and the background colour turns green temporarily to indicate it's correct | Click correct answer | Answer choice background colour turned green | Pass |
+| Incorrect answer | Click your chosen answer and it background colour turns red temporarily and the correct answer background colour turns green temporarily | Click incorrect answer | Answer choice background colour turned red and correct answer background colour turned green | Pass|
+| Progress bar | When you answer a question the progress bar text advances by one and the progress bar itself proportionally fills in its background colour green | Click an answer option | The question text advanced by one and the progress bar background colour filled in proportionally | Pass | 
+| Score correct answer | Click on correct answer and score total increases by 10 points | Click on correct answer | Score total increased by 10 points | Pass |
+| Score wrong answer | Click on  wrong answer and score total stays the same | Click incorrect answer | Score total stayed the same | Pass |
+Quiz ends | When 20 questions have been answered user is taken to end page html and their score is displayed | Answer 20 questions | Answered 20 questions and was took to end.html and the total score was displayed| Pass |
+| Home button | o take the user to index html page  | Click button  | Took user to index.html | Pass  |
+
+
+
+#### End Page Testing
+
+| Feature  | Expected outcome  | Testing performed  | Result  | Pass/Fail  |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| The h1 title encloses a link anchor  | To take the user to index html page  | Click link  | Took user to index.html | Pass  |
+| Hover colour change on h1 to identify link | The h1 will change to the secondary colour to identify it's a clickable link | Hover over h1 | h1 changed to secondary colour | Pass|
+| Player name input | User can type in the input field and save their name with their score | Type in input field and | Was able to enter name in input field | Pass |
+| Save button | The player name and their score will save to local | Click button | Player name and score saved to local storage | Pass|
+| Save button disabled | If no text is entered in player name field the save button is disabled | Click button | Tried to click button but it was disabled | Pass |
+| Play again button | To take the user to quiz html | Click button | Took user to quiz.html | Pass |
+| Home button | To take the user to index html page  | Click button  | Took user to index.html | Pass  |
+
+#### High Scores Page Testing
+
+| Feature  | Expected outcome  | Testing performed  | Result  | Pass/Fail  |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+| The h1 title encloses a link anchor  | To take the user to index html page  | Click link  | Took user to index.html | Pass  |
+| Hover colour change on h1 to identify link | The h1 will change to the secondary colour to identify it's a clickable link | Hover over h1 | h1 changed to secondary colour | Pass |
+| High scores list | Players and their high scores are pulled from local storage and render in a top  ten list | Save a score and player name on end page html | Player name and score rendered in a numbered list on high scores page | Pass |
+| Home button | To take the user to index html page  | Click button  | Took user to index.html | Pass  |
+| Clear high scores button | Delete high scores from local storage, clear high list and display "No high scores yet - play a game!" | Click button | Deleted local high scores from local storage, cleared high scores list and displayed "No high scores yet - play a game!" | Pass |
+
+
+
 
 #### Summary
 
