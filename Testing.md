@@ -25,11 +25,11 @@ Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io
 
 ## Overview of Testing
 
-In developing *Murder Who Wrote?* both automated and manual testing was employed.  Manual testing involves taking User Stories and going through each to make sure you have achieved all the features you set out to.  In this project friends, family and myself tested every page and each feature to ensure the logic was working as it should.  Please see the section below on [full testing](#full-testing) for the detailed account of tests that were undertaken.  Manual testing also involved looking at the responsive across all the different display types to ensure the user experience was the same throughout.
+In developing *Murder Who Wrote?* both automated and manual testing was employed. Both manual and automatic testing is vital to produce code that is clean and readable.  Manual testing is most useful during development and user experience evaluation, while automated testing is ideal for validating code quality and performance before deployment.
+
+Manual testing involves taking User Stories and going through each to make sure you have achieved all the features you set out to.  In this project friends, family and myself tested every page and each feature to ensure the logic was working as it should.  Please see the section below on [full testing](#full-testing) for the detailed account of tests that were undertaken.  Manual testing also involved looking at the responsive across all the different display types to ensure the user experience was the same throughout.
 
 Automated testing is where code is used to automatically test other code that has been developed.  The benefits are that it is quicker than manual testing especially if there is a lot  of code to test.  It can also pick up edge cases that would be missed in manual testing as one of the negatives to manual testing is the issue of human error.  The automatic testing I have used is [W3C](https://www.w3.org/) validation testing to check HTML and CSS and then [JSHint](https://jshint.com/) to check JavaScript for errors.  I also used Lighthouse testing in Google Dev Tools to assess performance, accessibility best practices and SEO.
-
-Both manual and automatic testing is vital to produce 
 
 The testing process was ongoing throughout the development of the quiz and it is true what they say the best way to learn is by doing. I aimed to maintain RITE method of testing in that I would write code test it and then if there was a bug I would fix that and then move on to the next bug.  Invariably as you solve one bug another occurs and using the RITE method enabled me to test and correct code methodically.
 
