@@ -34,7 +34,7 @@
     highScoresList.appendChild(li);
     return;
   }
-  
+  // renders the high scores list
   highScores.forEach(({ playerName, score }) => {
     const li = document.createElement("li");
     li.textContent = `PI ${playerName} - ${score}`;
@@ -42,7 +42,7 @@
   });
 });
 
-// Clear high scores
+// Clears high scores
 
 const clearButton = document.getElementById("clearScoresBtn");
 

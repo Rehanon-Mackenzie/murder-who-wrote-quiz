@@ -26,11 +26,11 @@
   const yourScore = document.getElementById("yourScore");
   const scorePad = document.getElementById("scorePad");
 
-  // robustly read score (defaults to 0 if missing)
+  // reads score (defaults to 0 if missing)
   const mostRecentScore = Number(localStorage.getItem("mostRecentScore") || 0);
   if (yourScore) yourScore.textContent = String(mostRecentScore);
 
-  // enable/disable Save button as user types
+  // enable/disable Save button to ensure user has typed their name in input field
   function updateButtonState() {
   const hasName = playerName.value.trim().length > 0;
   playerScoreButton.disabled = !hasName;
@@ -38,6 +38,7 @@
   updateButtonState();
   playerName.addEventListener("input", updateButtonState);
 
+  // renders user's score in your score element
   function parseHighScoresSafe() {
     const score = localStorage.getItem("highScores");
     if (!score) return [];
@@ -60,12 +61,12 @@
       .slice(0, 20);
     if (!safeName) return;
 
-    const highScores = parseHighScoresSafe();
-    highScores.push({ score: mostRecentScore, playerName: safeName });
+    const highScores = parseHighScoresSafe(); // retrieves existing high scores or creates a new array if there are no scores saved
+    highScores.push({ score: mostRecentScore, playerName: safeName }); // adds the player's most recent score
+    //Sorts scores into descending order and keeps only the top 10
     highScores.sort((a, b) => b.score - a.score);
     highScores.splice(MAX_HIGH_SCORES);
 
-    localStorage.setItem("highScores", JSON.stringify(highScores));
-    // go to leaderboard page (this matches your first HTML block)
-    window.location.assign("index.html"); // or 'highscores.html' if you keep it separate
+    localStorage.setItem("highScores", JSON.stringify(highScores)); // saves updated high scores list back to local storage
+    window.location.assign("index.html"); // redirects player back to the home page
 });

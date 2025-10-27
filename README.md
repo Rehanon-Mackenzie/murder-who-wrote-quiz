@@ -232,11 +232,16 @@ HTML, CSS, Javascript
 
 * [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-* [Shields.io](https://shields.io/) To add badges to the README
+* [Shields.io](https://shields.io/) To add badges to the README.
 
 * [Chat GPT](https://chatgpt.com/) - To create the questions and store as JSON.
 
 * [Coolors](https://coolors.co/) - To create the colour palette for the website.
+
+* [Prettier](https://prettier.io/docs/editors) - To format code in VSC.
+
+* [Code Spell Checker](https://streetsidesoftware.com/vscode-spell-checker/) - To check spelling errors in the code in VSC.
+
 
 ## Deployment & Local Development
 

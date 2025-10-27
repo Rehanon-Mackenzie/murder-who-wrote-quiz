@@ -52,10 +52,12 @@ async function loadQuestions() {
 
 loadQuestions();
 
-// constants
+
 
 const correct_bonus = 10;
 const max_questions = 20;
+
+// Starts quiz
 
 function startQuiz () {
   questionNumber = 0;
@@ -76,6 +78,8 @@ function startQuiz () {
   getNextQuestion();
 }
 
+// randomises and loads questions automatically
+
 function getNextQuestion () {
   if (questionNumber >= max_questions || availableQuestions.length === 0) {
     finishQuiz();
@@ -93,6 +97,8 @@ function getNextQuestion () {
     option.dataset.answerIndex = String(i);
   });
 }
+
+// finishes quiz and sends user to end page
 
 function finishQuiz() {
   localStorage.setItem("mostRecentScore", score);
@@ -113,6 +119,8 @@ options.forEach((option) => {
 
     const selectedRow = option.closest(".quiz-container") || option;
     selectedRow.classList.add(result);
+
+// shows if answer is correct or incorrect
 
     if (result === "correct") {
       score += correct_bonus;
@@ -140,7 +148,7 @@ function updateHud() {
   // Text: “Question X / N”
   progressText.textContent = `Question ${questionNumber} / ${max_questions}`;
 
-
+// Fills in progress bar proportionally
   const pct = Math.round(((questionNumber - 1) / max_questions) * 100);
   progressBar.style.width = `${pct}%`;
   progressBar.parentElement.setAttribute("aria-valuenow", String(pct));

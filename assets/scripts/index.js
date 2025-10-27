@@ -56,10 +56,3 @@
             closeModal(modal);
         });
     });
-
-    // Optional: clicking the overlay closes any open modal
-    overlay.addEventListener("click", function () {
-        document.querySelectorAll(".modal.active").forEach(function (m) {
-            closeModal(m);
-        });
-}());
