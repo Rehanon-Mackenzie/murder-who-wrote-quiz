@@ -181,11 +181,15 @@ Work Sans was the secondary font used on the site and is the font for all the bo
 * On saving the scores are stored in Local Storage.
 
 ### 🏆 High Scores Page
-![Highscores page screenshot](/documentation/Highscores%20page%20screenshot.PNG)
+![Highscores page screenshot](/documentation/high%20scores%20list.PNG)
 
 * Retrieves scores from Local Storage.
 * Displays sorted leaderboard.
 * Top 10 scores will be displayed.
+* Allows user to clear scores from local storage and rest high scores list.
+* If no high scores have been stored the high scores page displays "No high scores - yet play a game!"
+
+![No high scores screenshot](/documentation/high%20scores%20no%20scores%20listed.PNG)
 
 ### ❌ 404 Error Page
 ![404 page screenshot](/documentation/404%20page%20screenshot.PNG)
