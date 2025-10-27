@@ -57,7 +57,7 @@ This is a quiz for all the armchair detectives who love nothing better than sitt
 
 Murder mysteries continue to be a universal source of pleasure for people and each generation has its own unsuspecting sleuth or amateur busy body that is able to unpick the clues and workout who dunnit? In 2020 it was the centenary celebration for the first ever murder mystery written by Dame Agatha Christie, _The Mysterious Affair at Styles_. This was the first outing for Hercule Poirot and his famous "little grey cells".
 
-Since then there has been Jessica Fletcher, Colombo, Inspector Barnaby to name but a few. Each one has their own way of getting to the bottom of things whether it's acting confused and a little dishevelled in the case of Colombo or hiding your brilliant mind behind your knitting in the way of Miss Marples. They all solve the mystery in just the nick of time.
+Since then there has been Jessica Fletcher, Colombo, Inspector Barnaby to name but a few. Each one has their own way of getting to the bottom of things whether it's acting confused and a little dishevelled in the case of Colombo or hiding your brilliant mind behind your knitting in the way of Miss Marple. They all solve the mystery in just the nick of time.
 
 _Murder Who Wrote?_ gives the player an opportunity to see just how much they know about the genre.
 
@@ -116,7 +116,7 @@ Work Sans was the secondary font used on the site and is the font for all the bo
 
   ### Wireframes
 
-  The wireframes were designed for mobile, tablet and desktop using balasmiq.
+  The wireframes were designed for mobile, tablet and desktop using balsamiq.
 
   #### Home Page
 
@@ -292,7 +292,7 @@ Please see the separate [TESTING.md](Testing.md) file for all the tests carried 
 
 ### Known Issues
 
-The project is designed to be responsive from 375px and upwards, in line with the material taught on the course LMS. Minor layout inconsistencies may occur on extra-wide (e.g. 4k/8k monitors), or smart-display devices (e.g. Nest Hub, Smart Watches, Gameboy Color, etc.), as these resolutions are outside the project's scope, as taught by Code Institute.
+The project is designed to be responsive from 375px and upwards, in line with the material taught on the course LMS. Minor layout inconsistencies may occur on extra-wide (e.g. 4k/8k monitors), or smart-display devices (e.g. Nest Hub, Smart Watches, Game Boy Color, etc.), as these resolutions are outside the project's scope, as taught by Code Institute.
 
 ## Credits
 ### Code Used

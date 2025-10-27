@@ -16,14 +16,22 @@ Visit the deployed site: [Murder Who Wrote?](https://rehanon-mackenzie.github.io
     * [Full Testing](#full-testing)
         * [Responsiveness](#responsiveness)
         * [Browser Compatibility](#browser-compatibility)
+        * [Home Page  Testing](#home-page-testing)
+        * [Quiz Page Testing](#quiz-page-testing)
+        * [End Page Testing](#end-page-testing)
+        * [High Scores Page Testing](#high-scores-page-testing)
         * [Summary](#summary)
 
 
 ## Overview of Testing
 
-In developing *Murder Who Wrote?* both automated and testing was employed.  Automat
+In developing *Murder Who Wrote?* both automated and manual testing was employed.  Manual testing involves taking User Stories and going through each to make sure you have achieved all the features you set out to.  In this project friends, family and myself tested every page and each feature to ensure the logic was working as it should.  Please see the section below on [full testing](#full-testing) for the detailed account of tests that were undertaken.  Manual testing also involved looking at the responsive across all the different display types to ensure the user experience was the same throughout.
 
-The testing process was ongoing thoroughout the development of the quiz and it is true what they say the best way to learn is by doing. 
+Automated testing is where code is used to automatically test other code that has been developed.  The benefits are that it is quicker than manual testing especially if there is a lot  of code to test.  It can also pick up edge cases that would be missed in manual testing as one of the negatives to manual testing is the issue of human error.  The automatic testing I have used is [W3C](https://www.w3.org/) validation testing to check HTML and CSS and then [JSHint](https://jshint.com/) to check JavaScript for errors.  I also used Lighthouse testing in Google Dev Tools to assess performance, accessibility best practices and SEO.
+
+Both manual and automatic testing is vital to produce 
+
+The testing process was ongoing throughout the development of the quiz and it is true what they say the best way to learn is by doing. I aimed to maintain RITE method of testing in that I would write code test it and then if there was a bug I would fix that and then move on to the next bug.  Invariably as you solve one bug another occurs and using the RITE method enabled me to test and correct code methodically.
 
 I used the console throughout to test code and error check as I went.  The tutorials from Code Institute on using Google Development Tools were really useful.  I made good use of the Sources tab and was regularly adding breakpoints to my code to find out what was actually going on.
 
@@ -124,7 +132,7 @@ Tested on physical devices and Chrome DevTools presets.
 |--------------------|----------------|----------------|:---:|
 | iPhone SE (375x667) | Content readable, buttons accessible | Works as expected | ✅ |
 | iPad (768x1024) | Layout centered, modal fits screen | Works as expected | ✅ |
-| Laptop (1366x768) | Layout stable, hover colours visible | Works as expected | ✅ |
+| Laptop (1366x768) | Layout stable, hover colour visible | Works as expected | ✅ |
 | Desktop (1920x1080) | Layout scales correctly, all elements visible | Works as expected | ✅ |
 
 #### Browser Compatibility
